@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Agent Directory | MultiDynamic Real Estate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "inverse-on-surface": "#eef1f6", "on-tertiary-fixed": "#1a1c1c", "tertiary-fixed-dim": "#c6c6c7", "on-background": "#181c20", "surface-alt": "#F4F4F4", surface: "#f7f9ff", "primary-fixed": "#ffdbce", "error-container": "#ffdad6", "on-surface-variant": "#594138", "surface-variant": "#e0e3e8", "on-error": "#ffffff", "on-secondary-container": "#003e7f", "surface-container-lowest": "#ffffff", "surface-container-high": "#e5e8ee", "status-trust": "#00529C", "tertiary-fixed": "#e2e2e2", secondary: "#245eaa", "surface-container-highest": "#e0e3e8", "surface-tint": "#a73b00", "inverse-primary": "#ffb599", "primary-container": "#f36421", "primary-fixed-dim": "#ffb599", "surface-container": "#ebeef3", "on-secondary-fixed-variant": "#00468c", "on-tertiary": "#ffffff", "outline-variant": "#e1bfb3", background: "#f7f9ff", "on-primary-container": "#4f1800", "surface-bright": "#f7f9ff", "secondary-container": "#7aacfe", "interaction-vibrant": "#F36421", "on-secondary-fixed": "#001b3d", "on-secondary": "#ffffff", "on-primary-fixed": "#370e00", "on-primary": "#ffffff", error: "#ba1a1a", "secondary-fixed-dim": "#a9c7ff", "tertiary-container": "#909191", tertiary: "#5d5f5f", "surface-white": "#FFFFFF", "surface-container-low": "#f1f4f9", "on-tertiary-fixed-variant": "#454747", outline: "#8d7166", "surface-dim": "#d7dadf", "on-tertiary-container": "#282a2b", "on-surface": "#181c20", "on-primary-fixed-variant": "#7f2b00", primary: "#a73b00", "secondary-fixed": "#d6e3ff", "inverse-surface": "#2d3135" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "margin-desktop": "64px", "margin-mobile": "16px", "section-gap": "120px", gutter: "24px", base: "8px" }, fontFamily: { "display-lg": ["Montserrat"], "label-bold": ["Montserrat"], "body-md": ["Montserrat"], "headline-sm": ["Montserrat"], "label-sm": ["Montserrat"], "headline-md": ["Montserrat"], "body-lg": ["Montserrat"], "display-lg-mobile": ["Montserrat"], headline: ["Montserrat"], display: ["Montserrat"], body: ["Montserrat"], label: ["Montserrat"] }, fontSize: { "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "label-bold": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }], "headline-sm": ["24px", { lineHeight: "1.3", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "500" }], "headline-md": ["32px", { lineHeight: "1.2", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "display-lg-mobile": ["36px", { lineHeight: "1.2", fontWeight: "700" }] } } } };</script>
+    <link href="site.css" rel="stylesheet">
+    <style>
+        .diagonal-bg {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .diagonal-accent {
+            clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .diagonal-break-top {
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background font-body-md text-on-background">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-white border-b border-surface-container-high shadow-sm">
+        <div class="flex justify-between items-center h-20 px-margin-desktop w-full max-w-full">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center" href="home.html">
+                    <img alt="MultiDynamic" class="h-10 object-contain"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA" />
+                </a>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="buy.html">Buy</a>
+                    <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1"
+                        href="rent.html">Rent</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="home.html#services">Sell</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="agents.html#agent-directory">Agents</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="office.html#office-list">Offices</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="about.html#about-story">About</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:block font-label-bold text-label-bold text-secondary px-4 py-2 hover:bg-surface-container-low rounded-lg transition-all"
+                    onclick="window.location.href='about.html#join-us'" type="button">Join Us</button>
+                <button
+                    class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all"
+                    onclick="window.location.href='agent.html#book-appraisal'" type="button">Book Appraisal</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Header Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden bg-white" id="agent-search">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 transform translate-x-20 z-0"></div>
+        <div class="relative z-10 px-margin-desktop max-w-7xl mx-auto">
+            <div class="max-w-2xl mb-12">
+                <h1 class="font-display-lg text-display-lg text-secondary mb-4 italic">Find Your Next <span
+                        class="text-primary">Agent</span> Match.</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">Connect with Australia's most dynamic real
+                    estate professionals through a cleaner, faster search experience.</p>
+            </div>
+            <div class="bg-white card-ghost-shadow p-6 md:p-8 rounded-lg border border-surface-container-high">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <div class="flex flex-col gap-2">
+                        <label class="font-label-bold text-label-sm text-outline uppercase tracking-wider">Name</label>
+                        <div class="relative">
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+                            <input
+                                class="w-full pl-10 pr-4 py-3 rounded border border-surface-container-high focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all"
+                                placeholder="Search agents..." type="text">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label
+                            class="font-label-bold text-label-sm text-outline uppercase tracking-wider">Suburb</label>
+                        <select
+                            class="w-full px-4 py-3 rounded border border-surface-container-high focus:border-secondary focus:ring-1 focus:ring-secondary outline-none appearance-none bg-surface-white">
+                            <option>All Locations</option>
+                            <option>Ingleburn</option>
+                            <option>Auburn</option>
+                            <option>Oran Park</option>
+                            <option>Southport</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label
+                            class="font-label-bold text-label-sm text-outline uppercase tracking-wider">Office</label>
+                        <select
+                            class="w-full px-4 py-3 rounded border border-surface-container-high focus:border-secondary focus:ring-1 focus:ring-secondary outline-none appearance-none bg-surface-white">
+                            <option>All Offices</option>
+                            <option>MultiDynamic Ingleburn</option>
+                            <option>MultiDynamic Auburn</option>
+                            <option>MultiDynamic Oran Park</option>
+                            <option>MultiDynamic Southport</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label
+                            class="font-label-bold text-label-sm text-outline uppercase tracking-wider">Service</label>
+                        <select
+                            class="w-full px-4 py-3 rounded border border-surface-container-high focus:border-secondary focus:ring-1 focus:ring-secondary outline-none appearance-none bg-surface-white">
+                            <option>Residential Sales</option>
+                            <option>Property Management</option>
+                            <option>Commercial</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button
+                            class="w-full bg-primary text-white font-label-bold text-label-bold py-3.5 rounded-lg hover:brightness-110 transition-all flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-[20px]">filter_list</span> Apply Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Agent Grid -->
+    <main class="max-w-7xl mx-auto px-margin-desktop py-section-gap" id="agent-directory">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <span class="font-label-bold text-label-sm text-primary uppercase tracking-widest block mb-2">Our
+                    Network</span>
+                <h2 class="font-display-lg text-headline-md text-on-background">42 Agents Found</h2>
+            </div>
+            <div class="flex gap-2">
+                <button
+                    class="p-2 border border-surface-container-high rounded hover:bg-surface-container transition-colors">
+                    <span class="material-symbols-outlined">grid_view</span>
+                </button>
+                <button
+                    class="p-2 border border-surface-container-high rounded hover:bg-surface-container transition-colors">
+                    <span class="material-symbols-outlined">view_list</span>
+                </button>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
+            <!-- Agent Card 1 -->
+            <div
+                class="group bg-surface-white border border-surface-container-high overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col relative">
+                <!-- Diagonal Overlay Corner -->
+                <div
+                    class="absolute top-0 right-0 w-16 h-16 bg-primary-container diagonal-accent z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pl-4">
+                    <span class="material-symbols-outlined text-white text-[20px]">star</span>
+                </div>
+                <div class="relative h-80 overflow-hidden">
+                    <img alt="Agent Portrait"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                        data-alt="A professional male real estate agent in a tailored charcoal suit standing confidently against a soft-focus modern corporate office background. The lighting is bright and high-contrast, highlighting architectural precision. The agent has a warm, authoritative expression, conveying expertise and approachability. The overall aesthetic is sleek and high-end with neutral tones and orange highlights."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_EYn6xpXOgmkTaJI9XN-oW9bXJp0JFla-2Hb3h6QFPkhgV5hLSB8CuPNmIoBVFxoUVWpRfP-HOFakzKGAAb9CMewxp0PIocMBlC49Kix19z5wUmt3yVTqGYEnk7rr_GwzNdqZoWWJOvbX3M_Zwtat29c8NqYl4VAO4kZUe6aoV2AvyRW1uta7fkCwAsA-lND8AOqmn3OFPOAz5VZeFCjq86l_FwTORI0v7miG8Dwgb3h_lvs0vP7AeDCdF5dZxCOSykeXBb7JC3U">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                        <p class="font-label-bold text-label-sm text-white/90">Director / Sales Agent</p>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-display-lg text-headline-sm text-on-background mb-1">Marcus Thorne</h3>
+                    <p class="font-label-bold text-label-sm text-secondary mb-4">MultiDynamic Ingleburn</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">call</span>
+                            <span class="font-body-md text-label-sm">0400 123 456</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                            <span class="font-body-md text-label-sm">m.thorne@multidynamic.com.au</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">translate</span>
+                            <span class="font-body-md text-label-sm">English, Mandarin</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <button
+                            class="w-full bg-primary-container text-on-primary font-label-bold text-label-sm py-3 rounded hover:bg-primary transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#book-appraisal'" type="button">Book
+                            Appraisal</button>
+                        <button
+                            class="w-full border border-secondary text-secondary font-label-bold text-label-sm py-3 rounded hover:bg-secondary/5 transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#agent-overview'" type="button">View
+                            Profile</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Agent Card 2 -->
+            <div
+                class="group bg-surface-white border border-surface-container-high overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col relative">
+                <div
+                    class="absolute top-0 right-0 w-16 h-16 bg-primary-container diagonal-accent z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pl-4">
+                    <span class="material-symbols-outlined text-white text-[20px]">workspace_premium</span>
+                </div>
+                <div class="relative h-80 overflow-hidden">
+                    <img alt="Agent Portrait"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                        data-alt="A professional female real estate executive with a friendly yet determined expression, wearing a navy blazer and white silk blouse. She is positioned against a clean, minimalist white wall with geometric shadow patterns. The photography is sharp and bright, using a cool color palette with high-contrast energy. The mood is sophisticated and suggests a premium market expert."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm0Wjjo6PRIiQ5ayvZPeBSoCh5iwT6SlcUtWEpsUhUWJRfqwSfnNjlV4GJjt8nT4IyJGN3-AGFAqoSH_qYve9bKla6AmD8_EE2vlBrA8DMqWjj82pR6I4oOR8qHT-aDvgORttUbmjZGMAvfkA_RIJGNJ83J1FfQIaSxykbgwOQ7n2esEWg9vF73zPrbI0cYRAQ2N2UbjomldvqRFTMmHYc6COIBuHzhwJMdVJBCutdXEJ9v3ui0MsKHdg-52iSmztP3yEXZCNjVEs">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                        <p class="font-label-bold text-label-sm text-white/90">Senior Property Manager</p>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-display-lg text-headline-sm text-on-background mb-1">Sarah Chen</h3>
+                    <p class="font-label-bold text-label-sm text-secondary mb-4">MultiDynamic Auburn</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">call</span>
+                            <span class="font-body-md text-label-sm">0411 987 654</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                            <span class="font-body-md text-label-sm">s.chen@multidynamic.com.au</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">translate</span>
+                            <span class="font-body-md text-label-sm">English, Cantonese</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <button
+                            class="w-full bg-primary-container text-on-primary font-label-bold text-label-sm py-3 rounded hover:bg-primary transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#book-appraisal'" type="button">Book
+                            Appraisal</button>
+                        <button
+                            class="w-full border border-secondary text-secondary font-label-bold text-label-sm py-3 rounded hover:bg-secondary/5 transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#agent-overview'" type="button">View
+                            Profile</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Agent Card 3 -->
+            <div
+                class="group bg-surface-white border border-surface-container-high overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col relative">
+                <div
+                    class="absolute top-0 right-0 w-16 h-16 bg-primary-container diagonal-accent z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pl-4">
+                    <span class="material-symbols-outlined text-white text-[20px]">award_star</span>
+                </div>
+                <div class="relative h-80 overflow-hidden">
+                    <img alt="Agent Portrait"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                        data-alt="A portrait of a male real estate agent in his early 40s with a confident and trustworthy smile. He wears a professional light blue shirt and no tie for a modern, approachable look. The background features a high-end residential interior with expansive windows and natural light. The aesthetic is clean, luxurious, and high-contrast with a focus on professional clarity."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgq82si8WdVRyyoQdElKBLwoobmwKG_1Er140qwOv-qQIhz1i9u29JrW1T3LUz980Vc_mgIZyLrieoGpEe3uhfowbkULL9hpFMi7jSH_rIVx0f0lx2_2YMJDUyILmA3LjeR-DoTBWheuuyrzdyJekHFGDmiz3ArrBCzS-6N14om-fV_oGcnOmvbaJHGxPCj4cVcP9pspz1KMs0a1oNZ7lslXssNqldCy1FJcsTFHR5iYkbJWzWYcAynshNrkL0MP65x1Xorn4a7IM">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                        <p class="font-label-bold text-label-sm text-white/90">Lead Auctioneer</p>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-display-lg text-headline-sm text-on-background mb-1">Julian Rossi</h3>
+                    <p class="font-label-bold text-label-sm text-secondary mb-4">MultiDynamic Oran Park</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">call</span>
+                            <span class="font-body-md text-label-sm">0422 555 888</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                            <span class="font-body-md text-label-sm">j.rossi@multidynamic.com.au</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">translate</span>
+                            <span class="font-body-md text-label-sm">English, Italian</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <button
+                            class="w-full bg-primary-container text-on-primary font-label-bold text-label-sm py-3 rounded hover:bg-primary transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#book-appraisal'" type="button">Book
+                            Appraisal</button>
+                        <button
+                            class="w-full border border-secondary text-secondary font-label-bold text-label-sm py-3 rounded hover:bg-secondary/5 transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#agent-overview'" type="button">View
+                            Profile</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Agent Card 4 -->
+            <div
+                class="group bg-surface-white border border-surface-container-high overflow-hidden hover:scale-[1.02] transition-all duration-300 flex flex-col relative">
+                <div class="relative h-80 overflow-hidden">
+                    <img alt="Agent Portrait"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                        data-alt="A professional headshot of a female real estate agent with a stylish, modern appearance. She is wearing a chic business dress and standing in a sun-drenched architectural space with sharp geometric lines and bright white surfaces. The lighting is ethereal yet precise, creating a sophisticated corporate-modern vibe. The color palette is dominated by whites and soft grays with pops of vibrant primary orange."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOh02yR6Vb7L8y3LMjPePRiFwe56567EkwTsdZg1LQNsnMCZICBODmJudGbW8CrSXVOu7sRI28L09z0eSAMpFn-rOMqo9ItaE24P-wVAd1XEvhdeK5PVoVRnruAxUDndDqX5KzBl0p1TnkbI2xFsFwYwuJkzt_fbczuBXeO3L28oaskjQosWMd2dnc3FAu0kqncPPnwiEXXd2vnPPne_nTWhj0PT-eiilp8N_aDQSqMQX4B_ypZ9_BKZ9BKsEf5DeastMJSEP_cPA">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent">
+                        <p class="font-label-bold text-label-sm text-white/90">Sales Consultant</p>
+                    </div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-display-lg text-headline-sm text-on-background mb-1">Aria Vance</h3>
+                    <p class="font-label-bold text-label-sm text-secondary mb-4">MultiDynamic Southport</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">call</span>
+                            <span class="font-body-md text-label-sm">0433 222 111</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">mail</span>
+                            <span class="font-body-md text-label-sm">a.vance@multidynamic.com.au</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-on-surface/70">
+                            <span class="material-symbols-outlined text-[18px]">translate</span>
+                            <span class="font-body-md text-label-sm">English, Spanish</span>
+                        </div>
+                    </div>
+                    <div class="mt-auto flex flex-col gap-2">
+                        <button
+                            class="w-full bg-primary-container text-on-primary font-label-bold text-label-sm py-3 rounded hover:bg-primary transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#book-appraisal'" type="button">Book
+                            Appraisal</button>
+                        <button
+                            class="w-full border border-secondary text-secondary font-label-bold text-label-sm py-3 rounded hover:bg-secondary/5 transition-colors uppercase tracking-wider"
+                            onclick="window.location.href='agent.html#agent-overview'" type="button">View
+                            Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="mt-20 flex justify-center items-center gap-4">
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-full border border-surface-container-high hover:bg-secondary hover:text-on-secondary transition-all">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <div class="flex gap-2">
+                <button
+                    class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary text-on-secondary font-label-bold">1</button>
+                <button
+                    class="w-12 h-12 flex items-center justify-center rounded-full border border-surface-container-high hover:bg-surface-container transition-all font-label-bold">2</button>
+                <button
+                    class="w-12 h-12 flex items-center justify-center rounded-full border border-surface-container-high hover:bg-surface-container transition-all font-label-bold">3</button>
+                <span class="flex items-end pb-2">...</span>
+                <button
+                    class="w-12 h-12 flex items-center justify-center rounded-full border border-surface-container-high hover:bg-surface-container transition-all font-label-bold">12</button>
+            </div>
+            <button
+                class="w-12 h-12 flex items-center justify-center rounded-full border border-surface-container-high hover:bg-secondary hover:text-on-secondary transition-all">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+    </main>
+    <!-- Join the Network Section (Diagonal Break) -->
+    <section class="bg-surface-container-low py-24 relative diagonal-break-top" id="join-us">
+        <div class="max-w-7xl mx-auto px-margin-desktop text-center">
+            <h2 class="font-display-lg text-headline-md text-secondary mb-6">Are you a Dynamic Real Estate Professional?
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">We are always looking
+                for top talent to join our expanding network. Gain access to premium tools, national leads, and a
+                culture of performance.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button
+                    class="bg-secondary text-on-secondary font-label-bold text-label-bold px-10 py-4 rounded-lg hover:scale-105 transition-transform duration-300"
+                    onclick="window.location.href='about.html#join-us'" type="button">Join MultiDynamic</button>
+                <button
+                    class="border border-secondary text-secondary font-label-bold text-label-bold px-10 py-4 rounded-lg hover:bg-secondary/5 transition-colors"
+                    onclick="window.location.href='about.html#about-story'" type="button">Our Philosophy</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="w-full relative overflow-hidden bg-secondary before:content-[''] before:absolute before:inset-0 before:bg-primary-container before:h-2 before:w-full before:top-0 before:origin-left before:-skew-y-2">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap">
+            <div class="flex flex-col gap-6">
+                <a class="inline-block mb-2" href="home.html"><img alt="MultiDynamic Logo"
+                        class="h-12 w-auto object-contain bg-white/90 p-1 rounded"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA"></a>
+                <p class="font-body-md text-body-md text-on-secondary/80">Leading Australia's real estate evolution with
+                    precision, energy, and local expertise.</p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-on-secondary/30 flex items-center justify-center text-on-secondary hover:bg-primary-container transition-colors"
+                        href="home.html">
+                        <span class="material-symbols-outlined text-[20px]">share</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-on-secondary/30 flex items-center justify-center text-on-secondary hover:bg-primary-container transition-colors"
+                        href="about.html#contact">
+                        <span class="material-symbols-outlined text-[20px]">public</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4
+                    class="font-label-bold text-label-bold text-on-secondary uppercase tracking-widest border-b border-on-secondary/10 pb-2">
+                    Navigation</h4>
+                <ul class="space-y-3">
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="agents.html#agent-directory">Find an Agent</a></li>
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="office.html#office-list">Find an Office</a></li>
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="buy.html#buy-listings">Latest Listings</a></li>
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="agent.html#agent-listings">Sold Properties</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4
+                    class="font-label-bold text-label-bold text-on-secondary uppercase tracking-widest border-b border-on-secondary/10 pb-2">
+                    Support</h4>
+                <ul class="space-y-3">
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="about.html#contact">Privacy Policy</a></li>
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="about.html#contact">Terms of Service</a></li>
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="home.html#insights">Newsletter Signup</a></li>
+                    <li class=""><a
+                            class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-colors"
+                            href="about.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h4
+                    class="font-label-bold text-label-bold text-on-secondary uppercase tracking-widest border-b border-on-secondary/10 pb-2">
+                    Newsletter</h4>
+                <p class="font-body-md text-body-md text-on-secondary/70">Stay updated with market insights and new
+                    opportunities.</p>
+                <div class="flex gap-2">
+                    <input
+                        class="bg-white/10 border border-white/20 px-4 py-2 rounded flex-grow text-on-secondary placeholder:text-on-secondary/40 focus:outline-none focus:border-primary-container"
+                        placeholder="Email address" type="email">
+                    <button class="bg-primary-container p-2 rounded text-on-primary"
+                        onclick="window.location.href='home.html#insights'" type="button">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="px-margin-desktop py-6 border-t border-on-secondary/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-md text-label-sm text-on-secondary/60">© 2024 MultiDynamic Real Estate. All rights
+                reserved.</p>
+            <div class="flex gap-6">
+                <img alt="Industry Logo 1" class="h-6 opacity-30 grayscale invert"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh12iQBwNbewGzRjXQk6o2P_9H-twlYtvkobDAur66ElV-7KAapSlP7AiaenbiLzhD3nPKXxqXdpH-zn8Vsfzqx3KT_Kc_d4-VcTK2f_AfqWjMuMwkqaJw0L5dWKJ3oYhuF5JR5FlcQH2w1trVAh19Vbf3_bURKzJx1O6dGEMFvvJl8b5uKsz8A9Ww2ShXJWNFAPD9FnbB0Xz7UbUvqEIUXpS5Yo0MI_y2j8fy9_Fp8AQDgITGq2yCk-VuX2iAiuD3qRyPuclf3wk">
+                <img alt="Industry Logo 2" class="h-6 opacity-30 grayscale invert"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWhBDYTubfdhtewtPlHW2KqR7cZ93NaFSfbCpF3Bq-a-25HAbi3qtxVhEZWMQD8iwQucqohyUxMxIJOF37DKJej_snftmNcdm6gOk-xoWFyJzcc7xQax7W6oBfjQZp8RJ9I3Mwy-985wilioXrLWaZVX9QuliKMs0p49xcodj7ggvpUreisqSp1kWuHbNT6-AG9Lll4CMA7j2-w14PGrk8t5sE1D9td6ky8laOvQKnHwSaE-4R0x3R054wdjme_PmHIIo-btVxsTQ">
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simple search interaction for the header
+        document.querySelectorAll('input, select').forEach(element => {
+            element.addEventListener('focus', () => {
+                element.parentElement.classList.add('scale-[1.01]');
+            });
+            element.addEventListener('blur', () => {
+                element.parentElement.classList.remove('scale-[1.01]');
+            });
+        });
+    </script>
+    <script src="site.js"></script>
+
+
+</body>
+
+</html>

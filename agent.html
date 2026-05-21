@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Agent Profile | MultiDynamic Real Estate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "inverse-on-surface": "#eef1f6", "on-tertiary-fixed": "#1a1c1c", "tertiary-fixed-dim": "#c6c6c7", "on-background": "#181c20", "surface-alt": "#F4F4F4", surface: "#f7f9ff", "primary-fixed": "#ffdbce", "error-container": "#ffdad6", "on-surface-variant": "#594138", "surface-variant": "#e0e3e8", "on-error": "#ffffff", "on-secondary-container": "#003e7f", "surface-container-lowest": "#ffffff", "surface-container-high": "#e5e8ee", "status-trust": "#00529C", "tertiary-fixed": "#e2e2e2", secondary: "#245eaa", "surface-container-highest": "#e0e3e8", "surface-tint": "#a73b00", "inverse-primary": "#ffb599", "primary-container": "#f36421", "primary-fixed-dim": "#ffb599", "surface-container": "#ebeef3", "on-secondary-fixed-variant": "#00468c", "on-tertiary": "#ffffff", "outline-variant": "#e1bfb3", background: "#f7f9ff", "on-primary-container": "#4f1800", "surface-bright": "#f7f9ff", "secondary-container": "#7aacfe", "interaction-vibrant": "#F36421", "on-secondary-fixed": "#001b3d", "on-secondary": "#ffffff", "on-primary-fixed": "#370e00", "on-primary": "#ffffff", error: "#ba1a1a", "secondary-fixed-dim": "#a9c7ff", "tertiary-container": "#909191", tertiary: "#5d5f5f", "surface-white": "#FFFFFF", "surface-container-low": "#f1f4f9", "on-tertiary-fixed-variant": "#454747", outline: "#8d7166", "surface-dim": "#d7dadf", "on-tertiary-container": "#282a2b", "on-surface": "#181c20", "on-primary-fixed-variant": "#7f2b00", primary: "#a73b00", "secondary-fixed": "#d6e3ff", "inverse-surface": "#2d3135" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "margin-desktop": "64px", "margin-mobile": "16px", "section-gap": "120px", gutter: "24px", base: "8px" }, fontFamily: { "display-lg": ["Montserrat"], "label-bold": ["Montserrat"], "body-md": ["Montserrat"], "headline-sm": ["Montserrat"], "label-sm": ["Montserrat"], "headline-md": ["Montserrat"], "body-lg": ["Montserrat"], "display-lg-mobile": ["Montserrat"], headline: ["Montserrat"], display: ["Montserrat"], body: ["Montserrat"], label: ["Montserrat"] }, fontSize: { "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "label-bold": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }], "headline-sm": ["24px", { lineHeight: "1.3", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "500" }], "headline-md": ["32px", { lineHeight: "1.2", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "display-lg-mobile": ["36px", { lineHeight: "1.2", fontWeight: "700" }] } } } };</script>
+    <link href="site.css" rel="stylesheet">
+    <style>
+        .diagonal-bg {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .diagonal-accent-right {
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .transition-all-custom {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .skew-box {
+            transform: skewY(-2deg);
+        }
+
+        .skew-box>* {
+            transform: skewY(2deg);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-white border-b border-surface-container-high shadow-sm">
+        <div class="flex justify-between items-center h-20 px-margin-desktop w-full max-w-full">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center" href="home.html">
+                    <img alt="MultiDynamic" class="h-10 object-contain"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA" />
+                </a>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="buy.html">Buy</a>
+                    <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1"
+                        href="rent.html">Rent</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="home.html#services">Sell</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="agents.html#agent-directory">Agents</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="office.html#office-list">Offices</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="about.html#about-story">About</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:block font-label-bold text-label-bold text-secondary px-4 py-2 hover:bg-surface-container-low rounded-lg transition-all"
+                    onclick="window.location.href='about.html#join-us'" type="button">Join Us</button>
+                <button
+                    class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all"
+                    onclick="window.location.href='agent.html#book-appraisal'" type="button">Book Appraisal</button>
+            </div>
+        </div>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Header Section -->
+        <section class="relative pt-32 pb-20 overflow-hidden bg-white" id="agent-overview">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 transform translate-x-20 z-0">
+            </div>
+            <div class="relative z-10 px-margin-desktop max-w-7xl mx-auto">
+                <div class="max-w-2xl mb-12">
+                    <h1 class="font-display-lg text-display-lg text-secondary mb-4 italic">Meet Your <span
+                            class="text-primary">Area Specialist</span>.</h1>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant">A sharper look at the agent, market
+                        focus, and appraisal experience behind the result.</p>
+                </div>
+                <div class="bg-white card-ghost-shadow p-8 rounded-lg border border-surface-container-high">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                        <!-- Agent Image -->
+                        <div class="md:col-span-5 lg:col-span-4 relative group">
+                            <div
+                                class="absolute -top-4 -left-4 w-full h-full border-2 border-primary-container z-0 transition-all group-hover:top-0 group-hover:left-0">
+                            </div>
+                            <div class="relative bg-surface-container overflow-hidden aspect-[3/4] shadow-xl">
+                                <img alt="Marcus Sterling"
+                                    class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                                    data-alt="A professional real estate agent portrait featuring a confident man in a tailored navy blue suit, standing in a bright, modern corporate office with soft natural lighting. The aesthetic is clean and high-contrast, utilizing the MultiDynamic brand colors of white and orange in the subtle background details. He has a warm, authoritative expression, embodying trust and expertise."
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdw-JInVBBxdyGiZZvBmsyxEUXdxNqjgxCOQVvBCfmOEKUemZ1qjm7Wa5WySnyDkjnET0uLe7H6Dy1AderMMvvbB9RB5pUW7okahqr769TetPIn9RILQ9ncmr4gUcR-aNiC9zaFSg1Q0fRkaRUvecm9MlB9tx2681ec9gCO3n2HiXETJKlZOqzB52ZmLMdpai6psayMLpOG0wRK6Kd3Yk5Sd6VO5zuh8Oh-Kx265QHHv6GfcS2YjzxzYgk0p_DS0rd4iK_0vYmFQ4">
+                                <div
+                                    class="absolute bottom-0 right-0 bg-primary-container text-white px-6 py-4 font-display-lg text-headline-sm italic">
+                                    TOP 1% AGENT
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Profile Info -->
+                        <div class="md:col-span-7 lg:col-span-8 flex flex-col gap-6">
+                            <div class="flex flex-col gap-2">
+                                <h1
+                                    class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background">
+                                    Marcus Sterling</h1>
+                                <p class="font-headline-sm text-headline-sm text-primary tracking-wide">Principal Sales
+                                    Consultant &amp; Area Specialist</p>
+                                <a class="flex items-center gap-2 font-label-bold text-label-bold text-secondary hover:underline group"
+                                    href="office.html#office-list">
+                                    <span class="material-symbols-outlined text-sm">location_on</span>
+                                    MultiDynamic Sydney Metro Office
+                                    <span
+                                        class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                                </a>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+                                <div
+                                    class="flex items-center gap-4 p-4 bg-surface-container rounded-lg border border-transparent hover:border-secondary transition-all">
+                                    <div
+                                        class="bg-primary-container text-white p-3 rounded-full flex items-center justify-center">
+                                        <span class="material-symbols-outlined">call</span>
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-label-sm font-label-bold text-on-surface-variant uppercase tracking-widest">
+                                            Phone</p>
+                                        <p class="text-body-lg font-label-bold">+61 400 123 456</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex items-center gap-4 p-4 bg-surface-container rounded-lg border border-transparent hover:border-secondary transition-all">
+                                    <div
+                                        class="bg-primary-container text-white p-3 rounded-full flex items-center justify-center">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-label-sm font-label-bold text-on-surface-variant uppercase tracking-widest">
+                                            Email</p>
+                                        <p class="text-body-lg font-label-bold text-wrap break-all">
+                                            marcus@multidynamic.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <a class="w-10 h-10 flex items-center justify-center rounded-full bg-secondary text-white hover:bg-primary-container transition-all"
+                                    href="home.html#featured-listings">
+                                    <span class="material-symbols-outlined">share</span>
+                                </a>
+                                <a class="w-10 h-10 flex items-center justify-center rounded-full bg-secondary text-white hover:bg-primary-container transition-all"
+                                    href="agents.html#agent-directory">
+                                    <span class="material-symbols-outlined">person_add</span>
+                                </a>
+                                <a class="w-10 h-10 flex items-center justify-center rounded-full bg-secondary text-white hover:bg-primary-container transition-all"
+                                    href="about.html#contact">
+                                    <span class="material-symbols-outlined">chat</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stats & Highlights -->
+        <section class="bg-secondary text-white relative py-12 overflow-hidden">
+            <div class="absolute inset-0 skew-y-2 bg-secondary origin-left -z-10 h-full scale-110"></div>
+            <div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+                    <div>
+                        <p class="font-display-lg text-headline-md md:text-display-lg">$450M+</p>
+                        <p class="text-label-sm font-label-bold uppercase opacity-80 tracking-widest">Total Sales</p>
+                    </div>
+                    <div>
+                        <p class="font-display-lg text-headline-md md:text-display-lg">12+</p>
+                        <p class="text-label-sm font-label-bold uppercase opacity-80 tracking-widest">Years Experience
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-display-lg text-headline-md md:text-display-lg">98%</p>
+                        <p class="text-label-sm font-label-bold uppercase opacity-80 tracking-widest">Success Rate</p>
+                    </div>
+                    <div>
+                        <p class="font-display-lg text-headline-md md:text-display-lg">240</p>
+                        <p class="text-label-sm font-label-bold uppercase opacity-80 tracking-widest">Active Buyers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bio & Specialty Section -->
+        <section class="py-section-gap container mx-auto px-margin-mobile md:px-margin-desktop" id="book-appraisal">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+                <!-- Left: Bio -->
+                <div class="lg:col-span-8 flex flex-col gap-8">
+                    <div class="relative">
+                        <h2 class="font-display-lg text-headline-md mb-6 relative z-10">Professional Biography</h2>
+                        <div class="absolute -top-2 -left-4 w-20 h-20 bg-primary-container/10 -z-0"></div>
+                        <div class="space-y-4 text-on-surface-variant font-body-lg">
+                            <p class="">Marcus Sterling is not just a real estate agent; he is a strategic negotiator
+                                and a passionate advocate for his clients. With over a decade of experience in the
+                                high-stakes Sydney metropolitan market, Marcus has built a reputation for achieving
+                                record-breaking results while maintaining an unwavering commitment to integrity and
+                                transparency.</p>
+                            <p class="">Specializing in premium residential estates and strategic development sites,
+                                Marcus leverages a deep understanding of market cycles and demographic shifts to provide
+                                his clients with a competitive edge. His approach combines cutting-edge digital
+                                marketing with the traditional "boots on the ground" expertise that only a local market
+                                leader can provide.</p>
+                            <p class="">Whether you are a first-time seller or a seasoned investor, Marcus's goal is to
+                                turn the complex process of selling property into a seamless, rewarding experience that
+                                maximizes your financial return.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4 border-l-4 border-primary-container pl-4">
+                                Languages Spoken</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">English
+                                    (Native)</span>
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">Mandarin</span>
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">Cantonese</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4 border-l-4 border-primary-container pl-4">
+                                Specialty Suburbs</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">Sydney
+                                    CBD</span>
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">Surry
+                                    Hills</span>
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">Pyrmont</span>
+                                <span
+                                    class="px-4 py-2 bg-surface-container-high rounded-full font-label-bold text-label-sm">Redfern</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right: Form -->
+                <div class="lg:col-span-4 sticky top-24">
+                    <div
+                        class="bg-surface-white border border-surface-container-high p-8 shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-16 h-16 bg-primary-container/10 -mr-8 -mt-8 rotate-45">
+                        </div>
+                        <h3 class="font-display-lg text-headline-sm mb-2">Book an Appraisal</h3>
+                        <p class="text-body-md text-on-surface-variant mb-6">Discover the true value of your property
+                            with Marcus.</p>
+                        <form class="space-y-4">
+                            <div>
+                                <label class="font-label-bold text-label-sm mb-1 block">FULL NAME</label>
+                                <input
+                                    class="w-full border-surface-container-highest focus:border-secondary focus:ring-0 transition-all p-3 bg-surface-container-low"
+                                    placeholder="John Doe" type="text">
+                            </div>
+                            <div>
+                                <label class="font-label-bold text-label-sm mb-1 block">PHONE NUMBER</label>
+                                <input
+                                    class="w-full border-surface-container-highest focus:border-secondary focus:ring-0 transition-all p-3 bg-surface-container-low"
+                                    placeholder="+61 400 000 000" type="tel">
+                            </div>
+                            <div>
+                                <label class="font-label-bold text-label-sm mb-1 block">PROPERTY ADDRESS</label>
+                                <input
+                                    class="w-full border-surface-container-highest focus:border-secondary focus:ring-0 transition-all p-3 bg-surface-container-low"
+                                    placeholder="123 Example St, Sydney" type="text">
+                            </div>
+                            <button
+                                class="w-full bg-primary-container text-white font-label-bold text-label-bold py-4 hover:bg-primary transition-all shadow-md group flex items-center justify-center gap-2"
+                                type="submit">
+                                REQUEST APPRAISAL
+                                <span
+                                    class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Listings Tabs Section -->
+        <section class="bg-surface-container py-section-gap" id="agent-listings">
+            <div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-on-background">Track
+                            Record &amp; Listings</h2>
+                        <p class="text-on-surface-variant font-body-lg">Explore Marcus's active portfolio and recent
+                            success stories.</p>
+                    </div>
+                    <div class="flex bg-surface-white p-1 rounded-lg border border-surface-container-highest">
+                        <button
+                            class="px-6 py-2 rounded font-label-bold text-label-bold transition-all bg-primary-container text-white"
+                            id="tab-current" onclick="switchTab('current')">Current Listings</button>
+                        <button
+                            class="px-6 py-2 rounded font-label-bold text-label-bold transition-all text-on-surface hover:bg-surface-container"
+                            id="tab-sold" onclick="switchTab('sold')">Sold Properties</button>
+                    </div>
+                </div>
+                <!-- Tabs Content -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter" id="listings-grid">
+                    <!-- Cards will be injected/swapped here via JS -->
+                    <!-- Card 1 (Current) -->
+                    <div
+                        class="listing-item-current group bg-surface-white shadow-sm border border-transparent hover:border-secondary hover:shadow-xl transition-all-custom scale-100 hover:scale-102">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img alt="Property Listing"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="A luxurious modern architectural house with floor-to-ceiling glass windows, a dark charcoal exterior, and lush landscaped gardens. The shot is taken during the blue hour with warm interior lighting glowing through the glass, creating a high-contrast and high-end feel. Pristine white concrete accents reflect the MultiDynamic luxury branding."
+                                src="https://lh3.googleusercontent.com/aida/ADBb0ujnzevt6IuK244o1J8EzwiSafiXpuLjCyksRyzIiIBj0xeme9FHRzijlqNQwZDpMKVA2jjIdOdVXxgb_b3dRNHsKztPfHeuhzpJzKRWJ01Ffg2PnX2Iku_0U8ttcKBTEd78_tAnvMKdM8KiPsXU4eFl6aPZ1fqTg2rLC52v9uMRVEvcryz7zJZCiu0-NyVmCwqrWY6hCH3JYEl1CuHbM_n5ze4gNupEcec1h1vCkMOmMHjZeFRD25G-iA">
+                            <div
+                                class="absolute top-4 right-0 bg-primary-container text-white px-4 py-1 font-label-bold text-label-sm italic tracking-tighter skew-x-[-15deg] -mr-1">
+                                JUST LISTED
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4
+                                class="font-headline-sm text-headline-sm mb-2 group-hover:text-primary transition-colors">
+                                42 Skyline Avenue, Pyrmont</h4>
+                            <div class="flex gap-4 mb-4 text-on-surface-variant font-label-bold text-label-sm">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">bed</span> 4</span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">bathtub</span> 3</span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">directions_car</span> 2</span>
+                            </div>
+                            <p class="font-display-lg text-headline-sm text-on-background mb-4">Contact Agent</p>
+                            <button
+                                class="w-full py-3 border border-secondary text-secondary font-label-bold text-label-bold hover:bg-secondary hover:text-white transition-all"
+                                onclick="window.location.href='buy.html#buy-listings'" type="button">VIEW
+                                DETAILS</button>
+                        </div>
+                    </div>
+                    <!-- Card 2 (Current) -->
+                    <div
+                        class="listing-item-current group bg-surface-white shadow-sm border border-transparent hover:border-secondary hover:shadow-xl transition-all-custom scale-100 hover:scale-102">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img alt="Property Listing"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="A sprawling contemporary waterfront mansion with a large infinity pool reflecting a vibrant sunset sky. The architecture is sharp and geometric with white and grey tones. High-contrast lighting emphasizes the luxury and exclusivity of the location. Professional real estate photography style."
+                                src="https://lh3.googleusercontent.com/aida/ADBb0ujb44IhIMoofa6qLJ08SuP8QPXtZh7rMOUBPIiy5ttHwK6kaEqQeoAKCi9V74CHo7aIjXysWL7vOUkKFAxAz82YL12CXfgp1UU5Oq-ssgXVc5XcUA_hGgusm5nS0MRWrbSfK_u0xkJzkgSApdwljSzv0971mjgOzy9sQf_on8iZEOhlOUxozgKre5M7hnpc1Sb0nGQMBaFx1R3r5UzRWOpDhVdL_FYhuXCQbcfvlVHBMexLcs4Sn4GBZy4">
+                            <div
+                                class="absolute top-4 right-0 bg-secondary text-white px-4 py-1 font-label-bold text-label-sm italic tracking-tighter skew-x-[-15deg] -mr-1">
+                                AUCTION THIS SATURDAY
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h4
+                                class="font-headline-sm text-headline-sm mb-2 group-hover:text-primary transition-colors">
+                                15 Harbour Rise, Surry Hills</h4>
+                            <div class="flex gap-4 mb-4 text-on-surface-variant font-label-bold text-label-sm">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">bed</span> 5</span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">bathtub</span> 4</span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">directions_car</span> 3</span>
+                            </div>
+                            <p class="font-display-lg text-headline-sm text-on-background mb-4">Guide: $3,250,000</p>
+                            <button
+                                class="w-full py-3 border border-secondary text-secondary font-label-bold text-label-bold hover:bg-secondary hover:text-white transition-all"
+                                onclick="window.location.href='buy.html#buy-listings'" type="button">VIEW
+                                DETAILS</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 (Current) -->
+                    <div
+                        class="listing-item-current group bg-surface-white shadow-sm border border-transparent hover:border-secondary hover:shadow-xl transition-all-custom scale-100 hover:scale-102">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img alt="Property Listing"
+                                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                data-alt="A minimalist white modern home with a diagonal architectural facade and sharp edges. The scene is bright and airy with high-key lighting, featuring a single vibrant orange accent door to match the brand. Surrounded by clean stone paving and minimal greenery. The mood is precise and modern."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZnu297epCknLKwIeLP2AyZzg1wkULre0MGlGevEXsPsITnPLZoLqBlNu0qHHue_7y0AiUTFxaLmG08XOyl3AVzssPqGnBJyQR5MkY3Qw3x1hnabTf17EcDZKbpSFkILvpjdhrsnUDZOLa1GIeacUL5xaRP0UDK5yn_M_lpKL09HlMVhWTLcqJV0PztfsuhTSf0FKi3B6chAlIgmQeYPWPvtZoQkmQv3dWcVfPszPlkrql4txIQ0Hgpj8_DhyN2ibx2_vS-hSP524">
+                        </div>
+                        <div class="p-6">
+                            <h4
+                                class="font-headline-sm text-headline-sm mb-2 group-hover:text-primary transition-colors">
+                                8/220 Crown Street, Redfern</h4>
+                            <div class="flex gap-4 mb-4 text-on-surface-variant font-label-bold text-label-sm">
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">bed</span> 2</span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">bathtub</span> 2</span>
+                                <span class="flex items-center gap-1"><span
+                                        class="material-symbols-outlined text-sm">directions_car</span> 1</span>
+                            </div>
+                            <p class="font-display-lg text-headline-sm text-on-background mb-4">$1,100,000</p>
+                            <button
+                                class="w-full py-3 border border-secondary text-secondary font-label-bold text-label-bold hover:bg-secondary hover:text-white transition-all"
+                                onclick="window.location.href='buy.html#buy-listings'" type="button">VIEW
+                                DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full relative overflow-hidden bg-secondary dark:bg-on-secondary-fixed-variant text-on-secondary dark:text-secondary-fixed font-body-md text-body-md grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap relative before:content-[''] before:absolute before:inset-0 before:bg-primary-container before:h-2 before:w-full before:top-0 before:origin-left before:-skew-y-2">
+        <div class="md:col-span-1">
+            <a class="inline-block mb-4" href="home.html"><img alt="MultiDynamic Logo"
+                    class="h-10 w-auto object-contain"
+                    src="https://multidynamic.com.au/assets/images/logo/logo.png"></a>
+            <p class="mt-4 opacity-70">Elevating the standard of real estate excellence through dynamic strategy and
+                local insight.</p>
+        </div>
+        <div>
+            <h4 class="font-label-bold text-label-bold mb-6 uppercase tracking-widest text-primary-container">Quick
+                Links</h4>
+            <ul class="flex flex-col gap-4">
+                <li class=""><a
+                        class="text-on-secondary/80 dark:text-secondary-fixed/80 hover:text-primary-container transition-colors duration-200"
+                        href="agents.html#agent-directory">Find an Agent</a></li>
+                <li class=""><a
+                        class="text-on-secondary/80 dark:text-secondary-fixed/80 hover:text-primary-container transition-colors duration-200"
+                        href="office.html#office-list">Find an Office</a></li>
+                <li class=""><a
+                        class="text-on-secondary/80 dark:text-secondary-fixed/80 hover:text-primary-container transition-colors duration-200"
+                        href="home.html#insights">Newsletter Signup</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-label-bold text-label-bold mb-6 uppercase tracking-widest text-primary-container">Legal</h4>
+            <ul class="flex flex-col gap-4">
+                <li class=""><a
+                        class="text-on-secondary/80 dark:text-secondary-fixed/80 hover:text-primary-container transition-colors duration-200"
+                        href="about.html#contact">Privacy Policy</a></li>
+                <li class=""><a
+                        class="text-on-secondary/80 dark:text-secondary-fixed/80 hover:text-primary-container transition-colors duration-200"
+                        href="about.html#contact">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-label-bold text-label-bold mb-6 uppercase tracking-widest text-primary-container">Head
+                Office</h4>
+            <p class="opacity-70 mb-4">Level 12, Tower One, International Towers,<br>Sydney NSW 2000</p>
+            <div class="flex gap-4">
+                <span class="material-symbols-outlined opacity-60 hover:opacity-100 cursor-pointer">face_nod</span>
+                <span class="material-symbols-outlined opacity-60 hover:opacity-100 cursor-pointer">camera</span>
+                <span class="material-symbols-outlined opacity-60 hover:opacity-100 cursor-pointer">video_library</span>
+            </div>
+        </div>
+        <div class="md:col-span-4 mt-8 pt-8 border-t border-white/10 opacity-50 text-sm">
+            © 2024 MultiDynamic Real Estate. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const soldData = [
+            {
+                address: "24 Belvoir Street, Surry Hills",
+                stats: { bed: 3, bath: 2, car: 1 },
+                price: "$2,850,000",
+                img: "https://images.unsplash.com/photo-1448630360428-654a65753999?q=80&w=800&auto=format&fit=crop",
+                tag: "SOLD - RECORD PRICE",
+                prompt: "A sophisticated heritage terrace house in Sydney with a sleek modern renovation visible through large glass doors. The image is high-contrast with dark bricks and bright white window frames. The lighting is crisp morning sun, highlighting the architectural details and professional real estate styling."
+            },
+            {
+                address: "102/55 Miller St, Pyrmont",
+                stats: { bed: 2, bath: 1, car: 1 },
+                price: "$1,340,000",
+                img: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=800&auto=format&fit=crop",
+                tag: "SOLD UNDER HAMMER",
+                prompt: "A high-end modern apartment interior with dark wood floors, designer furniture, and huge windows overlooking a city skyline. The lighting is warm and cinematic, featuring the MultiDynamic brand palette of deep blues and oranges in the furniture accents. Everything looks pristine and professionally staged."
+            },
+            {
+                address: "4/15 Abercrombie St, Redfern",
+                stats: { bed: 2, bath: 2, car: 1 },
+                price: "$1,520,000",
+                img: "https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=800&auto=format&fit=crop",
+                tag: "SOLD OFF-MARKET",
+                prompt: "A sleek, industrial-style loft with high ceilings, exposed brick, and modern steel architectural details. The lighting is moody and artistic with spotlights focusing on the clean lines of the space. It reflects a high-contrast, professional modern aesthetic suitable for a premium real estate agent portfolio."
+            }
+        ];
+
+        const currentData = [
+            {
+                address: "42 Skyline Avenue, Pyrmont",
+                stats: { bed: 4, bath: 3, car: 2 },
+                price: "Contact Agent",
+                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+                tag: "JUST LISTED",
+                prompt: "A luxurious modern architectural house with floor-to-ceiling glass windows, a dark charcoal exterior, and lush landscaped gardens. High-contrast lighting with warm interiors glowing through glass. MultiDynamic brand aesthetic."
+            },
+            {
+                address: "15 Harbour Rise, Surry Hills",
+                stats: { bed: 5, bath: 4, car: 3 },
+                price: "Guide: $3,250,000",
+                img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop",
+                tag: "AUCTION THIS SATURDAY",
+                prompt: "Sprawling contemporary waterfront mansion with infinity pool reflecting vibrant sunset sky. High-contrast and professional."
+            },
+            {
+                address: "8/220 Crown Street, Redfern",
+                stats: { bed: 2, bath: 2, car: 1 },
+                price: "$1,100,000",
+                img: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=800&auto=format&fit=crop",
+                tag: "",
+                prompt: "Minimalist white modern home with diagonal facade. Bright and airy high-key lighting."
+            }
+        ];
+
+        function switchTab(type) {
+            const grid = document.getElementById('listings-grid');
+            const btnCurrent = document.getElementById('tab-current');
+            const btnSold = document.getElementById('tab-sold');
+            const data = type === 'sold' ? soldData : currentData;
+
+            // Update button styles
+            if (type === 'sold') {
+                btnSold.classList.add('bg-primary-container', 'text-white');
+                btnSold.classList.remove('text-on-surface');
+                btnCurrent.classList.remove('bg-primary-container', 'text-white');
+                btnCurrent.classList.add('text-on-surface');
+            } else {
+                btnCurrent.classList.add('bg-primary-container', 'text-white');
+                btnCurrent.classList.remove('text-on-surface');
+                btnSold.classList.remove('bg-primary-container', 'text-white');
+                btnSold.classList.add('text-on-surface');
+            }
+
+            // Animate transition
+            grid.style.opacity = '0';
+            grid.style.transform = 'translateY(10px)';
+
+            setTimeout(() => {
+                grid.innerHTML = data.map(item => `
+                    <div class="group bg-surface-white shadow-sm border border-transparent hover:border-secondary hover:shadow-xl transition-all-custom scale-100 hover:scale-102">
+                        <div class="relative overflow-hidden aspect-video">
+                            <img src="${item.img}" 
+                                 data-alt="${item.prompt}"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                                 alt="${item.address}">
+                            ${item.tag ? `
+                                <div class="absolute top-4 right-0 ${type === 'sold' ? 'bg-secondary' : 'bg-primary-container'} text-white px-4 py-1 font-label-bold text-label-sm italic tracking-tighter skew-x-[-15deg] -mr-1">
+                                    ${item.tag}
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-headline-sm text-headline-sm mb-2 group-hover:text-primary transition-colors">${item.address}</h4>
+                            <div class="flex gap-4 mb-4 text-on-surface-variant font-label-bold text-label-sm">
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bed</span> ${item.stats.bed}</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">bathtub</span> ${item.stats.bath}</span>
+                                <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">directions_car</span> ${item.stats.car}</span>
+                            </div>
+                            <p class="font-display-lg text-headline-sm text-on-background mb-4">${item.price}</p>
+                            <button class="w-full py-3 border border-secondary text-secondary font-label-bold text-label-bold hover:bg-secondary hover:text-white transition-all" onclick="window.location.href='buy.html#buy-listings'" type="button">VIEW DETAILS</button>
+                        </div>
+                    </div>
+                `).join('');
+                grid.style.opacity = '1';
+                grid.style.transform = 'translateY(0)';
+            }, 300);
+        }
+    </script>
+    <script src="site.js"></script>
+
+
+</body>
+
+</html>

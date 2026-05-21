@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Rent Your Next Home | MultiDynamic Real Estate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f36421",
+                        "secondary": "#245eaa",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f7f9ff",
+                        "surface-variant": "#e0e3e8",
+                        "outline": "#8d7166",
+                        "outline-variant": "#e1bfb3",
+                        "surface-container": "#ebeef3",
+                        "surface-container-high": "#e5e8ee",
+                        "surface-container-highest": "#e0e3e8",
+                        "on-surface": "#181c20",
+                        "on-surface-variant": "#594138",
+                        "background": "#f7f9ff",
+                        "primary-container": "#f36421",
+                        "error": "#ba1a1a"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "8px",
+                        "lg": "8px",
+                        "xl": "8px",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "section-gap": "120px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "base": "8px"
+                    },
+                    fontFamily: {
+                        "display": ["Montserrat", "sans-serif"],
+                        "headline": ["Montserrat", "sans-serif"],
+                        "body": ["Montserrat", "sans-serif"],
+                        "label": ["Montserrat", "sans-serif"],
+                        "display-lg": ["Montserrat", "sans-serif"],
+                        "display-lg-mobile": ["Montserrat", "sans-serif"],
+                        "headline-md": ["Montserrat", "sans-serif"],
+                        "headline-sm": ["Montserrat", "sans-serif"],
+                        "body-lg": ["Montserrat", "sans-serif"],
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "label-bold": ["Montserrat", "sans-serif"],
+                        "label-sm": ["Montserrat", "sans-serif"]
+                    },
+                    fontSize: {
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }]
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="site.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .diagonal-bg {
+            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        }
+
+        .diagonal-break-top {
+            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .diagonal-break-reverse {
+            clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .card-ghost-shadow {
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="bg-white font-body-md text-on-surface antialiased overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-white border-b border-surface-container-high shadow-sm">
+        <div class="flex justify-between items-center h-20 px-margin-desktop w-full max-w-full">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center" href="home.html">
+                    <img alt="MultiDynamic" class="h-10 object-contain"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA" />
+                </a>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="buy.html">Buy</a>
+                    <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1"
+                        href="rent.html">Rent</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="home.html#services">Sell</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="agents.html#agent-directory">Agents</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="office.html#office-list">Offices</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="about.html#about-story">About</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:block font-label-bold text-label-bold text-secondary px-4 py-2 hover:bg-surface-container-low rounded-lg transition-all"
+                    onclick="window.location.href='about.html#join-us'" type="button">Join Us</button>
+                <button
+                    class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all"
+                    onclick="window.location.href='agent.html#book-appraisal'" type="button">Book Appraisal</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Search Section -->
+    <section class="relative pt-32 pb-20 overflow-hidden bg-white" id="rental-search">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 transform translate-x-20 z-0"></div>
+        <div class="relative z-10 px-margin-desktop max-w-7xl mx-auto">
+            <div class="max-w-2xl mb-12">
+                <h1 class="font-display-lg text-display-lg text-secondary mb-4 italic">Find Your Next <span
+                        class="text-primary">Rental</span> Destination.</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">Access premium rental listings across the
+                    country with MultiDynamic's high-performance search ecosystem.</p>
+            </div>
+            <!-- Rental Filters Card -->
+            <div class="bg-white card-ghost-shadow p-8 rounded-lg border border-surface-container-high">
+                <form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-end">
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-secondary mb-2">Suburb or
+                            Postcode</label>
+                        <div class="relative">
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+                            <input
+                                class="w-full pl-10 pr-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary focus:outline-none transition-all"
+                                placeholder="e.g. Richmond" type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-secondary mb-2">Weekly Rent</label>
+                        <select
+                            class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary focus:outline-none appearance-none bg-white">
+                            <option>Any Price</option>
+                            <option>$400 - $600</option>
+                            <option>$600 - $800</option>
+                            <option>$800 - $1200</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block font-label-bold text-label-bold text-secondary mb-2">Property Type</label>
+                        <select
+                            class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary focus:outline-none appearance-none bg-white">
+                            <option>All Types</option>
+                            <option>House</option>
+                            <option>Apartment</option>
+                            <option>Townhouse</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center h-12">
+                        <label class="flex items-center gap-3 cursor-pointer group">
+                            <div class="relative">
+                                <input class="sr-only peer" type="checkbox" />
+                                <div
+                                    class="w-10 h-6 bg-surface-container-highest rounded-full peer-checked:bg-primary transition-all">
+                                </div>
+                                <div
+                                    class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-4">
+                                </div>
+                            </div>
+                            <span
+                                class="font-label-bold text-label-bold text-on-surface-variant group-hover:text-primary">Available
+                                Now</span>
+                        </label>
+                    </div>
+                    <button
+                        class="w-full bg-primary text-white font-label-bold text-label-bold py-4 rounded-lg flex items-center justify-center gap-2 hover:brightness-110 transition-all"
+                        type="submit">
+                        <span class="material-symbols-outlined">search</span>
+                        Search Listings
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Listings Grid -->
+    <section class="py-section-gap px-margin-desktop bg-surface-container-low/30 diagonal-break-top"
+        id="rental-listings">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <span
+                        class="font-label-bold text-label-bold text-primary tracking-widest uppercase mb-2 block">Featured
+                        Listings</span>
+                    <h2 class="font-headline-md text-headline-md text-secondary">New to the Rental Market</h2>
+                </div>
+                <div class="hidden md:flex gap-4">
+                    <button
+                        class="p-3 border border-outline-variant rounded-full hover:bg-white transition-all text-secondary"><span
+                            class="material-symbols-outlined">arrow_back</span></button>
+                    <button
+                        class="p-3 border border-outline-variant rounded-full hover:bg-white transition-all text-secondary"><span
+                            class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Property Card 1 -->
+                <div
+                    class="group bg-white rounded-lg overflow-hidden card-ghost-shadow border border-surface-container-high hover:border-secondary transition-all transform hover:scale-[1.02]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPM6K2XhXnTlqwdkJPqwsKizZy8gHPhOUAoyRJCJipIlEGFB71BOsu10BJcP-cYyiFV5HLJsUbTKJJT7UzU2NHHP-Qr7dmqPtCLEOuLvF3Vk5uFfnlkVqASUV1tWmgwErQbP-w6DLyZSkUGqpzuDKJa7qhmF9vlVB_oDDM-DWcbJF4GaJNKFOa9sVStEl7cH2t2H2AHwTkScA78MaW6dTf4D3tFa89oQIp5E0QllGq9jWf_R3AzCPsVN_BHPrmWMPk-KtKaXalvag" />
+                        <div
+                            class="absolute top-4 right-0 bg-primary text-on-primary px-4 py-1 font-label-bold text-label-sm italic -skew-x-12 transform translate-x-1">
+                            JUST LISTED</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-sm text-headline-sm text-secondary">$750 <span
+                                    class="text-label-bold text-on-surface-variant text-sm">/ per week</span></h3>
+                            <button class="text-outline hover:text-primary transition-colors"><span
+                                    class="material-symbols-outlined">favorite</span></button>
+                        </div>
+                        <p class="font-label-bold text-label-bold text-on-surface mb-4">42 Zenith Way, South Yarra VIC
+                            3141</p>
+                        <div class="flex gap-6 border-t border-surface-container-high pt-4">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">bed</span>
+                                <span class="font-label-bold text-label-bold">3</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">bathtub</span>
+                                <span class="font-label-bold text-label-bold">2</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">directions_car</span>
+                                <span class="font-label-bold text-label-bold">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 2 -->
+                <div
+                    class="group bg-white rounded-lg overflow-hidden card-ghost-shadow border border-surface-container-high hover:border-secondary transition-all transform hover:scale-[1.02]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2c4cHDmE0gnDEMJx8X4c8uMLNvKhM9_8uetrKcWfXJqtUv43bJcyxG34v3nJetHwe35YYhyY6d2ng0EqdvvqAoz7Uq6T9vgofwSNML6vH8aletyOuLEgoTtc3G8bHCtbTdny-ztKZuSSfOg8ZXJEk71OHt2QRvEcijdjl2a3oNNHTnqWwiWBboANCNMMjWbwhMKA7LVDytxJvfjnTbI_ANxu6Ot1plKDdErrn8dK-3iyETHisvu7sBmK2o5DmgHvi4JTIimw9DRI" />
+                        <div
+                            class="absolute top-4 right-0 bg-secondary text-on-secondary px-4 py-1 font-label-bold text-label-sm italic -skew-x-12 transform translate-x-1">
+                            AVAILABLE NOW</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-sm text-headline-sm text-secondary">$520 <span
+                                    class="text-label-bold text-on-surface-variant text-sm">/ per week</span></h3>
+                            <button class="text-outline hover:text-primary transition-colors"><span
+                                    class="material-symbols-outlined">favorite</span></button>
+                        </div>
+                        <p class="font-label-bold text-label-bold text-on-surface mb-4">15/88 Highline Circuit,
+                            Melbourne VIC 3000</p>
+                        <div class="flex gap-6 border-t border-surface-container-high pt-4">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">bed</span>
+                                <span class="font-label-bold text-label-bold">1</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">bathtub</span>
+                                <span class="font-label-bold text-label-bold">1</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">directions_car</span>
+                                <span class="font-label-bold text-label-bold">1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 3 -->
+                <div
+                    class="group bg-white rounded-lg overflow-hidden card-ghost-shadow border border-surface-container-high hover:border-secondary transition-all transform hover:scale-[1.02]">
+                    <div class="relative h-64 overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwxjYqkwF22VN43zS5H_fqxVCE-a72QPThQpktxwncX8Cjld1w7VwM98aOFdDIj3z1E5Wdy_1yToEGTRLPfrO4OcxorVkgisT1OGWFeH5JEwKSu3gdubSxnsLLzEv1jaN89C3BUfQqDQdD708U10KWf-XZQ2K9uajQBWJDxjOcHAxDcZJX7w-cHzNVXR6BUyIa3vUr-bFGMSP9UE6Dl-edVvwV28VQ_4_u5k15Oe7cZ46XMtBVHy8NSZaZRIm9qKHkNJ-ov234jCA" />
+                        <div
+                            class="absolute top-4 right-0 bg-primary text-on-primary px-4 py-1 font-label-bold text-label-sm italic -skew-x-12 transform translate-x-1">
+                            PET FRIENDLY</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-sm text-headline-sm text-secondary">$890 <span
+                                    class="text-label-bold text-on-surface-variant text-sm">/ per week</span></h3>
+                            <button class="text-outline hover:text-primary transition-colors"><span
+                                    class="material-symbols-outlined">favorite</span></button>
+                        </div>
+                        <p class="font-label-bold text-label-bold text-on-surface mb-4">204 Meadow Brook Lane, Berwick
+                            VIC 3806</p>
+                        <div class="flex gap-6 border-t border-surface-container-high pt-4">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">bed</span>
+                                <span class="font-label-bold text-label-bold">4</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">bathtub</span>
+                                <span class="font-label-bold text-label-bold">2</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary"
+                                    style="font-variation-settings: 'opsz' 20;">directions_car</span>
+                                <span class="font-label-bold text-label-bold">2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-center">
+                <button
+                    class="border-2 border-primary text-primary font-label-bold text-label-bold px-12 py-4 rounded-lg hover:bg-primary hover:text-white transition-all"
+                    onclick="window.location.href='rent.html#rental-listings'" type="button">
+                    View All 152 Rentals
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Services Sections -->
+    <section class="py-section-gap px-margin-desktop bg-white relative" id="tenant-services">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <!-- Property Management -->
+            <div class="relative">
+                <div class="absolute -top-12 -left-12 w-32 h-32 bg-primary/10 -skew-x-12 z-0"></div>
+                <div class="relative z-10">
+                    <span class="font-label-bold text-label-bold text-primary tracking-widest uppercase mb-4 block">For
+                        Investors</span>
+                    <h2 class="font-headline-md text-headline-md text-secondary mb-6">Premier Property Management
+                        Solutions</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">Secure your investment's future
+                        with our expert management team. We offer unparalleled tenant vetting, proactive maintenance,
+                        and strategic marketing to ensure maximum yield and minimum vacancy for your property portfolio.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span class="font-body-md text-body-md">Zero-tolerance rental arrears policy</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span class="font-body-md text-body-md">Detailed 24/7 landlord portal access</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary">check_circle</span>
+                            <span class="font-body-md text-body-md">Regular professional property inspections</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="bg-primary text-on-primary font-label-bold text-label-bold px-8 py-4 rounded-lg hover:brightness-110 transition-all"
+                        onclick="window.location.href='about.html#join-us'" type="button">Switch to
+                        MultiDynamic</button>
+                </div>
+            </div>
+            <!-- Visual Element for Property Management -->
+            <div class="relative hidden lg:block">
+                <div
+                    class="aspect-square bg-secondary rounded-lg overflow-hidden diagonal-break-reverse border-8 border-white card-ghost-shadow">
+                    <img class="w-full h-full object-cover transition-all duration-700"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuASOdpqMRccXE3rQrRmn9wpYZvx5a1iFe-qA1o7KpAU3Lp5zY2M3_DZNO9Aq8FV9elKM6PKZwionSJ3YemAZWlxvBJ4C34i5XWq_FCqc8yXqGJKOMBSglvfZ7ofVrXx5m5AaUk9SPhGa8TnbmHfXYrrBnyWneB8mHpalAEja5yLNHHomCCCZ93Nw2OScExBZ-bfkgbSZqZ-cEAQobXOdLflADov5-KItC3M5y3MrjFUw0g44qLjVn0-3Vjq7s5eGZtSwr_cAQnFCL0" />
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center mt-32">
+            <!-- Visual Element for Tenants -->
+            <div class="relative order-2 lg:order-1 hidden lg:block">
+                <div
+                    class="aspect-square bg-primary rounded-lg overflow-hidden diagonal-bg border-8 border-white card-ghost-shadow">
+                    <img class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMV0LK-8kPF-JmBAWIeFeaTLsZkuH_ClF7tpNyykumZlwOgJjY1w_6BjQiszrnSJER4-h8l0aK8eRbZ70yZUtybKrDCgNACvRC7ZKFuGojhElfXu7MbUWtdpvuQpjUUCfl626YYhSf0Txqaw4WJJy2oLqnhDaOkVonaH3lGpNm3UZUcbGM2DlirXhSxYsneBkAv7E9OiKAHzLyVdxviDEeU1NopdjsAxZGZ8gcrouc3iLctPcvzJx5w2HcpUMllgEUmQDK8PRP2KY" />
+                </div>
+            </div>
+            <!-- Tenant Services -->
+            <div class="order-1 lg:order-2">
+                <span class="font-label-bold text-label-bold text-primary tracking-widest uppercase mb-4 block">For
+                    Tenants</span>
+                <h2 class="font-headline-md text-headline-md text-secondary mb-6">Digital-First Tenant Experience</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">We've reimagined the rental journey.
+                    From high-speed online applications to streamlined digital reporting, our technology-led approach
+                    ensures a seamless and transparent living experience for every tenant.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 bg-surface-container-low/30 border border-surface-container-high rounded-lg">
+                        <span class="material-symbols-outlined text-secondary mb-3 text-3xl">bolt</span>
+                        <h4 class="font-label-bold text-label-bold text-secondary mb-2">Instant Application</h4>
+                        <p class="font-body-md text-body-md opacity-80">Submit and track your applications in real-time
+                            through our mobile portal.</p>
+                    </div>
+                    <div class="p-6 bg-surface-container-low/30 border border-surface-container-high rounded-lg">
+                        <span class="material-symbols-outlined text-secondary mb-3 text-3xl">build</span>
+                        <h4 class="font-label-bold text-label-bold text-secondary mb-2">Easy Maintenance</h4>
+                        <p class="font-body-md text-body-md opacity-80">Request repairs instantly with photo uploads and
+                            status tracking.</p>
+                    </div>
+                </div>
+                <button
+                    class="mt-10 border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-4 rounded-lg hover:bg-primary hover:text-white transition-all"
+                    onclick="window.location.href='about.html#contact'" type="button">Tenant FAQ &amp; Help</button>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="relative py-24 px-margin-desktop bg-secondary overflow-hidden diagonal-break-top">
+        <div class="absolute inset-0 opacity-10">
+            <div
+                class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_20%_30%,#F36421_0%,transparent_50%)]">
+            </div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="font-display-lg text-display-lg text-white mb-8">Ready to Find Your <span
+                    class="italic text-primary">Perfect Match?</span></h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <button
+                    class="bg-primary text-white font-label-bold text-label-bold px-10 py-5 rounded-lg hover:brightness-110 transition-all transform hover:scale-105 shadow-xl"
+                    onclick="window.location.href='rent.html#rental-listings'" type="button">
+                    Browse All Rentals
+                </button>
+                <button
+                    class="bg-transparent border-2 border-white text-white font-label-bold text-label-bold px-10 py-5 rounded-lg hover:bg-white hover:text-secondary transition-all"
+                    onclick="window.location.href='about.html#contact'" type="button">
+                    Register as a Tenant
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="w-full relative overflow-hidden bg-secondary before:content-[''] before:absolute before:inset-0 before:bg-primary before:h-2 before:w-full before:top-0 before:origin-left before:-skew-y-2 pt-20">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-gap relative">
+            <div class="col-span-1 md:col-span-1">
+                <img alt="MultiDynamic" class="h-12 mb-8 object-contain brightness-0 invert"
+                    src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA" />
+                <p class="font-body-md text-body-md text-white/80 leading-relaxed max-w-xs">
+                    Redefining real estate through high-performance strategies and local expertise.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-label-bold text-label-bold text-white mb-6 uppercase tracking-wider">Company</h4>
+                <nav class="flex flex-col gap-4">
+                    <a class="font-body-md text-body-md text-white/80 hover:text-primary transition-colors"
+                        href="agents.html#agent-directory">Find an Agent</a>
+                    <a class="font-body-md text-body-md text-white/80 hover:text-primary transition-colors"
+                        href="office.html#office-list">Find an Office</a>
+                    <a class="font-body-md text-body-md text-white/80 hover:text-primary transition-colors"
+                        href="home.html#insights">Newsletter Signup</a>
+                </nav>
+            </div>
+            <div>
+                <h4 class="font-label-bold text-label-bold text-white mb-6 uppercase tracking-wider">Legal</h4>
+                <nav class="flex flex-col gap-4">
+                    <a class="font-body-md text-body-md text-white/80 hover:text-primary transition-colors"
+                        href="about.html#contact">Privacy Policy</a>
+                    <a class="font-body-md text-body-md text-white/80 hover:text-primary transition-colors"
+                        href="about.html#contact">Terms of Service</a>
+                    <a class="font-body-md text-body-md text-white/80 hover:text-primary transition-colors"
+                        href="about.html#contact">Cookie Policy</a>
+                </nav>
+            </div>
+            <div>
+                <h4 class="font-label-bold text-label-bold text-white mb-6 uppercase tracking-wider">Connect</h4>
+                <div class="flex gap-4 mb-8">
+                    <a class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white"
+                        href="home.html"><span class="material-symbols-outlined text-sm">share</span></a>
+                    <a class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white"
+                        href="about.html#contact"><span class="material-symbols-outlined text-sm">mail</span></a>
+                    <a class="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white"
+                        href="agent.html#book-appraisal"><span class="material-symbols-outlined text-sm">call</span></a>
+                </div>
+                <div class="p-4 bg-white/10 rounded-lg">
+                    <p class="font-label-bold text-label-bold text-primary mb-2">Join our network</p>
+                    <div class="flex">
+                        <input
+                            class="bg-secondary/50 border-none rounded-l-lg px-3 py-2 text-white text-sm focus:ring-0 w-full placeholder:text-white/50"
+                            placeholder="Email" type="email" />
+                        <button class="bg-primary text-white px-3 rounded-r-lg"><span
+                                class="material-symbols-outlined">send</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="border-t border-white/10 py-8 px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-md text-body-md text-white/60">© 2024 MultiDynamic Real Estate. All rights reserved.</p>
+            <div class="flex gap-8">
+                <span class="font-label-bold text-label-bold text-white/40">Authority In Real Estate</span>
+            </div>
+        </div>
+    </footer>
+    <button
+        class="fixed bottom-8 right-8 bg-primary text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform z-40 lg:hidden">
+        <span class="material-symbols-outlined">filter_list</span>
+    </button>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                document.querySelectorAll('nav a').forEach(l => l.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1'));
+                this.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+            });
+        });
+    </script>
+    <script src="site.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>MultiDynamic | Dynamic Real Estate Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"on-error-container": "#93000a", "inverse-on-surface": "#eef1f6", "on-tertiary-fixed": "#1a1c1c", "tertiary-fixed-dim": "#c6c6c7", "on-background": "#181c20", "surface-alt": "#F4F4F4", surface: "#f7f9ff", "primary-fixed": "#ffdbce", "error-container": "#ffdad6", "on-surface-variant": "#594138", "surface-variant": "#e0e3e8", "on-error": "#ffffff", "on-secondary-container": "#003e7f", "surface-container-lowest": "#ffffff", "surface-container-high": "#e5e8ee", "status-trust": "#00529C", "tertiary-fixed": "#e2e2e2", secondary: "#245eaa", "surface-container-highest": "#e0e3e8", "surface-tint": "#a73b00", "inverse-primary": "#ffb599", "primary-container": "#f36421", "primary-fixed-dim": "#ffb599", "surface-container": "#ebeef3", "on-secondary-fixed-variant": "#00468c", "on-tertiary": "#ffffff", "outline-variant": "#e1bfb3", background: "#f7f9ff", "on-primary-container": "#4f1800", "surface-bright": "#f7f9ff", "secondary-container": "#7aacfe", "interaction-vibrant": "#F36421", "on-secondary-fixed": "#001b3d", "on-secondary": "#ffffff", "on-primary-fixed": "#370e00", "on-primary": "#ffffff", error: "#ba1a1a", "secondary-fixed-dim": "#a9c7ff", "tertiary-container": "#909191", tertiary: "#5d5f5f", "surface-white": "#FFFFFF", "surface-container-low": "#f1f4f9", "on-tertiary-fixed-variant": "#454747", outline: "#8d7166", "surface-dim": "#d7dadf", "on-tertiary-container": "#282a2b", "on-surface": "#181c20", "on-primary-fixed-variant": "#7f2b00", primary: "#a73b00", "secondary-fixed": "#d6e3ff", "inverse-surface": "#2d3135"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}, spacing: {"margin-desktop": "64px", "margin-mobile": "16px", "section-gap": "120px", gutter: "24px", base: "8px"}, fontFamily: {"display-lg": ["Montserrat"], "label-bold": ["Montserrat"], "body-md": ["Montserrat"], "headline-sm": ["Montserrat"], "label-sm": ["Montserrat"], "headline-md": ["Montserrat"], "body-lg": ["Montserrat"], "display-lg-mobile": ["Montserrat"], headline: ["Montserrat"], display: ["Montserrat"], body: ["Montserrat"], label: ["Montserrat"]}, fontSize: {"display-lg": ["48px", {lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700"}], "label-bold": ["14px", {lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600"}], "body-md": ["16px", {lineHeight: "1.5", fontWeight: "400"}], "headline-sm": ["24px", {lineHeight: "1.3", fontWeight: "600"}], "label-sm": ["12px", {lineHeight: "1.2", fontWeight: "500"}], "headline-md": ["32px", {lineHeight: "1.2", fontWeight: "600"}], "body-lg": ["18px", {lineHeight: "1.6", fontWeight: "400"}], "display-lg-mobile": ["36px", {lineHeight: "1.2", fontWeight: "700"}]}}}};</script>
+<link href="site.css" rel="stylesheet">
+<style>
+        .diagonal-clip { clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+        .diagonal-up-clip { clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .active-nav-link { border-bottom: 2px solid #a73b00; padding-bottom: 4px; }
+    </style>
+</head>
+<body class="bg-surface-white text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white border-b border-surface-container-high shadow-sm h-20 px-margin-desktop flex justify-between items-center w-full max-w-full">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-sm font-black text-primary italic tracking-tighter" href="home.html"><img alt="MultiDynamic Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA"></a>
+<nav class="hidden lg:flex gap-6 items-center">
+<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200" href="buy.html">Buy</a>
+<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200" href="rent.html">Rent</a>
+<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200" href="home.html#services">Sell</a>
+<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200" href="agents.html#agent-directory">Agents</a>
+<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200" href="office.html#office-list">Offices</a>
+<a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200" href="about.html#about-story">About</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block font-label-bold text-label-bold text-secondary px-4 py-2 hover:bg-surface-container-low rounded-lg transition-all" onclick="window.location.href='about.html#join-us'" type="button">Join Us</button>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all" onclick="window.location.href='agent.html#book-appraisal'" type="button">Book Appraisal</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden bg-white">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 transform translate-x-20 z-0"></div>
+<div class="relative z-10 px-margin-desktop max-w-7xl mx-auto">
+<div class="max-w-2xl mb-12">
+<h1 class="font-display-lg text-display-lg text-secondary mb-4 italic">Find Your Next <span class="text-primary">Property</span> Move.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Expert local knowledge meets national reach with a cleaner, rent-style search experience at the top of the homepage.</p>
+</div>
+<div class="bg-white card-ghost-shadow p-8 rounded-lg border border-surface-container-high grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-end">
+<div class="lg:col-span-2">
+<label class="block font-label-bold text-label-bold text-secondary mb-2">Suburb or Region</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline" data-icon="search">search</span>
+<input class="w-full pl-10 pr-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary focus:outline-none transition-all" placeholder="Suburb, Postcode or Region..." type="text">
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-secondary mb-2">Property Journey</label>
+<select class="w-full px-4 py-3 border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary focus:outline-none appearance-none bg-white">
+<option>Buy</option>
+<option>Rent</option>
+<option>Sold</option>
+</select>
+</div>
+<button class="bg-primary text-white font-label-bold text-label-bold px-8 py-4 rounded-lg hover:brightness-110 transition-all flex items-center justify-center gap-2" onclick="window.location.href='buy.html#buy-search'" type="button">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+                            Search Properties
+                        </button>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-section-gap bg-surface-white relative">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div>
+<div class="inline-block px-4 py-1 bg-primary-container/10 text-primary font-label-bold text-label-sm mb-4 rounded">NATIONAL REACH, LOCAL HEART</div>
+<h2 class="font-display-lg text-headline-md text-secondary mb-6">Expertise Across Borders, <br>Communities Built with Trust.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                            MultiDynamic brings together a multicultural team of elite agents who speak your language—literally and professionally. With over 20+ offices nationwide, we combine industrial-scale data with the personal touch of a neighborhood specialist.
+                        </p>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+<div class="border-l-4 border-primary-container pl-4">
+<div class="font-display-lg text-headline-sm text-secondary">2,500+</div>
+<div class="font-label-bold text-label-sm uppercase text-on-surface-variant">Properties Sold</div>
+</div>
+<div class="border-l-4 border-primary-container pl-4">
+<div class="font-display-lg text-headline-sm text-secondary">24</div>
+<div class="font-label-bold text-label-sm uppercase text-on-surface-variant">National Offices</div>
+</div>
+<div class="border-l-4 border-primary-container pl-4">
+<div class="font-display-lg text-headline-sm text-secondary">15+</div>
+<div class="font-label-bold text-label-sm uppercase text-on-surface-variant">Languages Spoken</div>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container -skew-y-2 opacity-10 group-hover:opacity-20 transition-opacity"></div>
+<img class="relative z-10 w-full aspect-[4/3] object-cover rounded-lg shadow-xl" data-alt="A professional multicultural team of real estate agents standing together in a bright, high-end office lobby. They are dressed in smart, corporate attire, exuding confidence and collaboration. The environment is modern with clean lines, polished stone floors, and expansive windows. The lighting is natural and bright, echoing a premium, high-contrast brand aesthetic with subtle warm undertones." src="https://lh3.googleusercontent.com/aida/ADBb0ujdzP_wJhgfB0_H5nshrpfR4WpavLbf7j5MN5xj3Bd-JqiMZrwM83o-txtv9P-JcgJlCJ-Mwq9ELo591QZPBk1vd3hwNqi3Rb0QrKXP2m1YzotdyQeNS0V27c7q4Sr-yzl7SNGuhmy-FViFhC114MPRBJwiseNCXgRp4OsZoXtF_xTyrkVur2NZO2Rh_J21Ii2h0c9nMJcBFAjO4USvsOIOz7268cvXvbzbNZR66l8aCTcEjHpJWDyCrD4">
+</div>
+</div>
+</div>
+</section>
+<!-- Service Cards Bento -->
+<section class="py-section-gap bg-surface-alt relative overflow-hidden" id="services">
+<!-- Diagonal Background Accent -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-secondary -skew-x-12 translate-x-1/2 opacity-[0.03]"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-display-lg text-headline-md text-secondary">Dynamic Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Comprehensive real estate solutions designed for modern markets.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Buy -->
+<div class="bg-surface-white p-8 group hover:bg-secondary transition-all duration-500 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 group-hover:text-white transition-colors" data-icon="search_insights">search_insights</span>
+<h3 class="font-display-lg text-headline-sm text-secondary group-hover:text-white mb-2">Buy with Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 mb-6">Find your dream home or next investment with our curated national portfolio.</p>
+<a class="font-label-bold text-label-bold text-primary-container group-hover:text-white flex items-center gap-2" href="buy.html#buy-listings">View Properties <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Sell -->
+<div class="bg-surface-white p-8 group hover:bg-secondary transition-all duration-500 rounded-lg shadow-sm border-t-4 border-primary-container">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 group-hover:text-white transition-colors" data-icon="sell">sell</span>
+<h3 class="font-display-lg text-headline-sm text-secondary group-hover:text-white mb-2">Sell with Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 mb-6">Strategic marketing and expert negotiation to maximize your property's value.</p>
+<a class="font-label-bold text-label-bold text-primary-container group-hover:text-white flex items-center gap-2" href="agent.html#book-appraisal">Sell with Us <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Rent -->
+<div class="bg-surface-white p-8 group hover:bg-secondary transition-all duration-500 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 group-hover:text-white transition-colors" data-icon="key">key</span>
+<h3 class="font-display-lg text-headline-sm text-secondary group-hover:text-white mb-2">Rent</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 mb-6">Browse high-quality rental listings across our national network.</p>
+<a class="font-label-bold text-label-bold text-primary-container group-hover:text-white flex items-center gap-2" href="rent.html#rental-listings">Browse Rentals <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Property Management -->
+<div class="bg-surface-white p-8 group hover:bg-secondary transition-all duration-500 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 group-hover:text-white transition-colors" data-icon="real_estate_agent">real_estate_agent</span>
+<h3 class="font-display-lg text-headline-sm text-secondary group-hover:text-white mb-2">Manage with Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 mb-6">Hands-off wealth creation with our professional property management suite.</p>
+<a class="font-label-bold text-label-bold text-primary-container group-hover:text-white flex items-center gap-2" href="rent.html#tenant-services">Manage Property <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Appraisal -->
+<div class="bg-primary-container p-8 group hover:bg-secondary transition-all duration-500 rounded-lg shadow-xl scale-105 z-10">
+<span class="material-symbols-outlined text-white text-4xl mb-4" data-icon="request_quote">request_quote</span>
+<h3 class="font-display-lg text-headline-sm text-white mb-2">Appraisal</h3>
+<p class="font-body-md text-body-md text-white/90 mb-6">Get a precise market valuation of your property from local experts.</p>
+<button class="bg-white text-primary font-label-bold text-label-bold px-6 py-3 rounded w-full group-hover:bg-primary-container group-hover:text-white transition-all" onclick="window.location.href='agent.html#book-appraisal'" type="button">Request Appraisal</button>
+</div>
+<!-- Join Us -->
+<div class="bg-surface-white p-8 group hover:bg-secondary transition-all duration-500 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-4xl mb-4 group-hover:text-white transition-colors" data-icon="groups">groups</span>
+<h3 class="font-display-lg text-headline-sm text-secondary group-hover:text-white mb-2">Join Us</h3>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-white/80 mb-6">Accelerate your career with the most dynamic team in the country.</p>
+<a class="font-label-bold text-label-bold text-primary-container group-hover:text-white flex items-center gap-2" href="about.html#join-us">View Careers <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Properties -->
+<section class="py-section-gap" id="featured-listings">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<h2 class="font-display-lg text-headline-md text-secondary">Featured Listings</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our most prestigious opportunities across the nation.</p>
+</div>
+<div class="flex gap-4">
+<button class="p-3 border border-outline-variant hover:bg-secondary hover:text-white transition-all"><span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span></button>
+<button class="p-3 border border-outline-variant hover:bg-secondary hover:text-white transition-all"><span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Property 1 -->
+<div class="bg-surface-white group cursor-pointer border border-surface-container-high hover:border-secondary transition-all">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern luxury architectural masterpiece with sharp angles and expansive glass balconies. The property is situated in a lush, manicured neighborhood under bright midday sun. High-contrast shadows define the building's geometric form. The overall style is crisp, clean, and vibrant, emphasizing the orange-warmth of the architectural highlights and the deep blue of the clear sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIrMI6FK9VGoLFfxXJBTQQiCKRhBnbYgAW4S9ERRhv3VfmtbMfR1u6XRjNA3HMN5SdSItx4GPameVlhnirx3--wbsSiVdNoRhhneedQU3j0oPeT_C03omHWZGf9t1K_vDl0NEq2C-YLlydEWZNhJ6-JF65rja91yjFcqbwBlczAk810yTcsWz0kdq_ljC6fwyEQaca1gk8UU2ORCy9TmWBn5p9-qHCuqmV7H3rRfq7IcFaLTLGiZUI0KYESZLtC3v_bMuPArSKQr8">
+<div class="absolute top-4 right-0 bg-primary-container text-white px-4 py-1 font-label-bold text-label-sm uppercase -skew-x-12 transform translate-x-2">Just Listed</div>
+</div>
+<div class="p-6">
+<div class="font-display-lg text-headline-sm text-secondary mb-1">$1,250,000 - $1,350,000</div>
+<div class="font-body-md text-body-md text-on-surface-variant mb-4">42 Zenith Way, Northwood NSW 2066</div>
+<div class="flex items-center gap-6 border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="bed">bed</span> 4
+                                </div>
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="bathtub">bathtub</span> 2
+                                </div>
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="directions_car">directions_car</span> 2
+                                </div>
+</div>
+</div>
+</div>
+<!-- Property 2 -->
+<div class="bg-surface-white group cursor-pointer border border-surface-container-high hover:border-secondary transition-all">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Interior of a luxury modern living room with floor-to-ceiling windows overlooking a city skyline. The interior features high-end minimalist furniture in neutral tones with vibrant orange accent cushions. The lighting is soft and cinematic, capturing the high-performance lifestyle MultiDynamic represents. The overall atmosphere is premium, clean, and architecturally precise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjzdSC0gX0grgP3pAtxTqEMB6Jbys-GZSTXkk1T6Xrx0x_anFHq7R6CNTdM-Ca_Zh72xm86rOQG9BhL8qIe9zXQS6Y6U83L_ePGGxvLf688cVV5vXMf4VxMhvuGkPaB8lxsebE18HTBI8gcfeaqsofpQnQsOFXYxCnBUo7lrFgqaGg0qOQFTlm-LuEba5kUe3pRGvoVXEYajtWpmMKarISOIAspMgjWH7nuQLZCZi4CvEYg3ekZbgNIJOSzi-Lr3YgsPMxIV0o1HY">
+<div class="absolute top-4 right-0 bg-secondary text-white px-4 py-1 font-label-bold text-label-sm uppercase -skew-x-12 transform translate-x-2">Open Saturday</div>
+</div>
+<div class="p-6">
+<div class="font-display-lg text-headline-sm text-secondary mb-1">Contact Agent</div>
+<div class="font-body-md text-body-md text-on-surface-variant mb-4">Apartment 802, Marina Towers VIC 3008</div>
+<div class="flex items-center gap-6 border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="bed">bed</span> 3
+                                </div>
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="bathtub">bathtub</span> 2
+                                </div>
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="directions_car">directions_car</span> 1
+                                </div>
+</div>
+</div>
+</div>
+<!-- Property 3 -->
+<div class="bg-surface-white group cursor-pointer border border-surface-container-high hover:border-secondary transition-all">
+<div class="relative overflow-hidden aspect-[16/10]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An expansive suburban family home with a beautifully landscaped front garden. The house features modern white cladding and dark blue window frames. The image is shot in bright daylight, highlighting the vibrant greens of the lawn and the orange hues of the flowering shrubs. The aesthetic is clean, professional, and suggests a high-trust, welcoming family environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS6xqF81hRVNUEyj_cGOXozOz4u7WH90TtbZ4fl6v_IV8-12RxsSAXPvQ3u_p2ZB41VGYe9YYwE2oWvNvYiVQlUajXgU47KH-a1dzBkbXfyTdAUYpcT2nWGu_wQN2FM8cRIas88TDRDaxTjlmczDUTRkm3I_HJpsDk9fW2Qlj23SpftUhACdRxXP_vBpi5Orjy_YOXV1EWbwGHfPjsuQ77yOkr44Wp-6u2ggatd8yh79X6x8zQBW_0mIP_dCz5d0U9ekLXx0YFDZU">
+<div class="absolute top-4 right-0 bg-primary-container text-white px-4 py-1 font-label-bold text-label-sm uppercase -skew-x-12 transform translate-x-2">Sold - $1.8M</div>
+</div>
+<div class="p-6">
+<div class="font-display-lg text-headline-sm text-secondary mb-1">$1,820,000</div>
+<div class="font-body-md text-body-md text-on-surface-variant mb-4">15 Willow Court, Casula NSW 2170</div>
+<div class="flex items-center gap-6 border-t border-surface-container-high pt-4">
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="bed">bed</span> 5
+                                </div>
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="bathtub">bathtub</span> 3
+                                </div>
+<div class="flex items-center gap-1.5 font-label-bold text-label-bold text-secondary">
+<span class="material-symbols-outlined text-[20px]" data-icon="directions_car">directions_car</span> 2
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial / Carousel Section -->
+<section class="bg-secondary text-white py-section-gap relative overflow-hidden diagonal-up-clip mt-[-5vw]">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div>
+<span class="material-symbols-outlined text-primary-container text-6xl mb-6" data-icon="format_quote">format_quote</span>
+<h2 class="font-display-lg text-headline-md mb-8">What Our Clients Say</h2>
+<div class="space-y-8">
+<div class="relative pl-12 border-l-2 border-primary-container">
+<p class="font-body-lg text-body-lg italic mb-4">"MultiDynamic handled our sale with unbelievable precision. Their local knowledge combined with a national buyer database got us a result $100k above our expectations."</p>
+<div class="font-label-bold text-label-bold uppercase tracking-widest text-primary-container">— David &amp; Sarah Miller, Vendors</div>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all"><span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span></button>
+<button class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-primary-container transition-all"><span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="hidden lg:block">
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded shadow-2xl skew-y-2" data-alt="A modern office building with blue glass windows reflecting the sky, framed by sharp architectural lines. The image emphasizes high-contrast and corporate scale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlcTR7MZ_daL1iL2a1ZnadQfGBnXc_z3m2VNiHwv_k3HhMZRksl4DSOeZXpTbi16gcevLQeHxQgyEZzV8QrCsjvCExiId_RxH0MqzKkHV9mF0SRVoaW7-ZmPYu2FnoIjuEifKG5r2kBWvlEKCdtVL4zORNegnKNzIwK4iI_co6Ci8k0BYI6eH6Ly6Wvv0g5PRdCkagfVI1f4NFHt5UIC21fukZt2-VCmL3R14pP4KzIolgDO3uGoUBapJdOzPisjIQqf-lAI7Q-pk">
+<img class="rounded shadow-2xl -skew-y-2 translate-y-8" data-alt="Close up of high-end real estate signage in front of a luxury property, featuring professional typography and brand colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHJXCFx57lDMCDOxLl7e7kqyMhkT2F5wZ0InaJLKcnmNow2yv4DrEyhNFtDuNuXC7DlY1KWk7htMqAorGJmCdPJOZ-jBC0Aoxf6QGchGRELUAikDcPz0SKmwSQ6GvsrqY19cLrrYz3vQS8-kJlVTRGwtCYZoZ1jzik2ZYKLPSO7gGwCEfdBWaq7Qz4P2BA4O1bKi8g0K8jgzLUE-bmwkUP4ALpLAH4XSvcVpFCk-NtjYo9F8iNtKpSU6T_U6Nnu3edLwABc2L3DDk">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Agent Spotlight / Office Locator -->
+<section class="py-section-gap bg-surface-white" id="agents">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<div class="lg:col-span-1">
+<h2 class="font-display-lg text-headline-md text-secondary mb-6">Our Elite Agents</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Meet the experts driving results in your neighborhood.</p>
+<button class="font-label-bold text-label-bold border-2 border-secondary text-secondary px-8 py-3 rounded hover:bg-secondary hover:text-white transition-all w-full" onclick="window.location.href='agents.html#agent-directory'" type="button">Find an Agent</button>
+<div class="mt-12 p-8 bg-surface-container rounded-lg border-l-4 border-primary-container">
+<h4 class="font-label-bold text-label-bold text-secondary mb-2 uppercase">Office Locator</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">With 24 offices across the country, we're always close by.</p>
+<div class="relative">
+<input class="w-full bg-white border border-outline-variant px-4 py-2 rounded focus:ring-secondary focus:border-secondary" placeholder="Enter suburb..." type="text">
+<button class="absolute right-2 top-2 text-secondary" onclick="window.location.href='office.html#office-list'" type="button"><span class="material-symbols-outlined" data-icon="location_on">location_on</span></button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Agent 1 -->
+<div class="group relative overflow-hidden rounded-lg">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A male professional real estate agent in a tailored blue suit, smiling confidently. He is standing against a blurred background of a modern architectural interior. The lighting is crisp and professional, highlighting his trustworthy and authoritative persona. The color palette includes sophisticated blues and neutral whites, reflecting the MultiDynamic brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS0MIHtQiQ5ktT9V_8iTRhrVpi0yA0o7sCLLJjnQte-mPgsJBSTQSQZSP7HqkYWdkxhlCx56WqkBNOVF9kiBDhH-gEwyEMweq0f3_7TnnXBMoHdGRDS_BGVkEEmJqB7tGnCcMavkVVBs8AhQXcmNgmO3VngZpxz_LAAqHVL3OfLeOG7nEo_wHM38KpBhZu3AFbNxguNzF3cWJGCj4MrcwCvPfTyCEVBJsBBvFAKaVJI0y1LlqD3mvhLVC5hFX60-9dst0MB5ORG4s">
+</div>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-secondary via-secondary/80 to-transparent text-white">
+<div class="font-display-lg text-headline-sm">Marcus Chen</div>
+<div class="font-label-bold text-label-sm uppercase text-primary-container">Senior Partner | Casula</div>
+<div class="mt-4 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-container" data-icon="call">call</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-container" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+<!-- Agent 2 -->
+<div class="group relative overflow-hidden rounded-lg">
+<div class="aspect-[4/5] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A female real estate professional in modern corporate attire, looking directly at the camera with an energetic and authoritative expression. The background features a clean, high-contrast office setting with bright lighting. The aesthetic is modern and energetic, echoing the vibrant orange accents of the MultiDynamic brand through her professional confidence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmexA_iML0Nxp294aCOjPYPwdAStP-IJ7ucM0h8R_pc3vctH8j0KerBvthFn6gmszQeMX4QnFK5qJQXWSQ732KuN0LRrnsslvSk98mPQyiH59K82T7WJrUJZv_i44vnjT4HDdjCISVdbGpi1zD2OhV7Eh_1Dm7MRkRiHZMjJCiof0-y5QQWgTUkcqQLiTLqV7Dyhjn3DBkS45SQ_708lAVSjQJSEL8TQmVEd3zvWkBfxraqO-E9aefCfzSWNvf6KhPR3yulOvkuUQ">
+</div>
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-secondary via-secondary/80 to-transparent text-white">
+<div class="font-display-lg text-headline-sm">Elena Rodriguez</div>
+<div class="font-label-bold text-label-sm uppercase text-primary-container">Sales Executive | Hurstville</div>
+<div class="mt-4 flex gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-container" data-icon="call">call</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-container" data-icon="mail">mail</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA Section (Diagonal) -->
+<section class="relative py-24 bg-surface-alt overflow-hidden" id="insights">
+<div class="absolute inset-0 bg-primary-container -skew-y-3 origin-left translate-y-12"></div>
+<div class="relative z-10 container mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-white mb-6">Stay Ahead of the Market</h2>
+<p class="font-body-lg text-body-lg text-white/90 mb-10 max-w-2xl mx-auto">Subscribe to our weekly insight report featuring off-market listings and expert market analysis.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+<input class="flex-grow px-6 py-4 rounded font-body-md border-none focus:ring-secondary" placeholder="Your email address" type="email">
+<button class="bg-secondary text-white font-label-bold text-label-bold px-10 py-4 rounded hover:bg-on-secondary-fixed-variant transition-all whitespace-nowrap">Join Insights</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full relative overflow-hidden bg-secondary text-on-secondary py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop before:content-[''] before:absolute before:inset-0 before:bg-primary-container before:h-2 before:w-full before:top-0 before:origin-left before:-skew-y-2">
+<div class="md:col-span-1">
+<div class="font-display-lg text-headline-md text-on-secondary mb-6 italic tracking-tighter"><img alt="MultiDynamic Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA"></div>
+<p class="font-body-md text-body-md text-on-secondary/80 mb-6">Redefining real estate through technical precision, cultural intelligence, and unmatched local expertise.</p>
+<div class="flex gap-4">
+<a class="hover:text-primary-container transition-colors" href="home.html#insights"><span class="material-symbols-outlined" data-icon="facebook">face_nod</span></a>
+<a class="hover:text-primary-container transition-colors" href="about.html#contact"><span class="material-symbols-outlined" data-icon="instagram">infrared</span></a>
+<a class="hover:text-primary-container transition-colors" href="agents.html#agent-directory"><span class="material-symbols-outlined" data-icon="linkedin">link</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold uppercase tracking-widest text-primary-container mb-6">Company</h4>
+<nav class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="about.html#about-story">About MultiDynamic</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="office.html#office-list">Our Offices</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="about.html#join-us">Careers</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="home.html#insights">Central Coast Sees Price Dip While Sydney Markets Rise</a><a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="home.html#insights">Reserve Bank Raise Interest Rate by 0.25%</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold uppercase tracking-widest text-primary-container mb-6">Quick Links</h4>
+<nav class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="agents.html#agent-directory">Find an Agent</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="office.html#office-list">Find an Office</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="about.html#contact">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="home.html#insights">Central Coast Sees Price Dip While Sydney Markets Rise</a><a class="font-body-md text-body-md text-on-secondary/80 hover:text-primary-container transition-all" href="home.html#insights">Reserve Bank Raise Interest Rate by 0.25%</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold uppercase tracking-widest text-primary-container mb-6">Contact</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="location_on">location_on</span>
+<span class="font-body-md text-body-md text-on-secondary/80">Suite 118, Level 49, 8 Parramatta Square<br>Parramatta NSW 2150</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="call">call</span>
+<span class="font-body-md text-body-md text-on-secondary/80">1800 1MULTI</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
+<span class="font-body-md text-body-md text-on-secondary/80">info@multidynamic.com.au</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 pt-12 border-t border-white/10 mt-12 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-secondary/60">© 2024 MultiDynamic Real Estate. All rights reserved.</p>
+<p class="font-body-md text-body-md text-on-secondary/60">Designed with Technical Precision.</p>
+</div>
+</footer>
+<script>
+        // Simple micro-interaction for search bar focus
+        document.querySelectorAll('input, select').forEach(el => {
+            el.addEventListener('focus', () => {
+                el.parentElement.classList.add('border-primary-container');
+            });
+            el.addEventListener('blur', () => {
+                el.parentElement.classList.remove('border-primary-container');
+            });
+        });
+
+        // Sticky header effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md', 'h-16');
+                header.classList.remove('h-20');
+            } else {
+                header.classList.remove('shadow-md', 'h-16');
+                header.classList.add('h-20');
+            }
+        });
+    </script>
+<script src="site.js"></script>
+
+
+</body></html>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>About Us | MultiDynamic Real Estate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script
+        id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "inverse-on-surface": "#eef1f6", "on-tertiary-fixed": "#1a1c1c", "tertiary-fixed-dim": "#c6c6c7", "on-background": "#181c20", "surface-alt": "#F4F4F4", surface: "#f7f9ff", "primary-fixed": "#ffdbce", "error-container": "#ffdad6", "on-surface-variant": "#594138", "surface-variant": "#e0e3e8", "on-error": "#ffffff", "on-secondary-container": "#003e7f", "surface-container-lowest": "#ffffff", "surface-container-high": "#e5e8ee", "status-trust": "#00529C", "tertiary-fixed": "#e2e2e2", secondary: "#245eaa", "surface-container-highest": "#e0e3e8", "surface-tint": "#a73b00", "inverse-primary": "#ffb599", "primary-container": "#f36421", "primary-fixed-dim": "#ffb599", "surface-container": "#ebeef3", "on-secondary-fixed-variant": "#00468c", "on-tertiary": "#ffffff", "outline-variant": "#e1bfb3", background: "#f7f9ff", "on-primary-container": "#4f1800", "surface-bright": "#f7f9ff", "secondary-container": "#7aacfe", "interaction-vibrant": "#F36421", "on-secondary-fixed": "#001b3d", "on-secondary": "#ffffff", "on-primary-fixed": "#370e00", "on-primary": "#ffffff", error: "#ba1a1a", "secondary-fixed-dim": "#a9c7ff", "tertiary-container": "#909191", tertiary: "#5d5f5f", "surface-white": "#FFFFFF", "surface-container-low": "#f1f4f9", "on-tertiary-fixed-variant": "#454747", outline: "#8d7166", "surface-dim": "#d7dadf", "on-tertiary-container": "#282a2b", "on-surface": "#181c20", "on-primary-fixed-variant": "#7f2b00", primary: "#a73b00", "secondary-fixed": "#d6e3ff", "inverse-surface": "#2d3135" }, borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" }, spacing: { "margin-desktop": "64px", "margin-mobile": "16px", "section-gap": "120px", gutter: "24px", base: "8px" }, fontFamily: { "display-lg": ["Montserrat"], "label-bold": ["Montserrat"], "body-md": ["Montserrat"], "headline-sm": ["Montserrat"], "label-sm": ["Montserrat"], "headline-md": ["Montserrat"], "body-lg": ["Montserrat"], "display-lg-mobile": ["Montserrat"], headline: ["Montserrat"], display: ["Montserrat"], body: ["Montserrat"], label: ["Montserrat"] }, fontSize: { "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }], "label-bold": ["14px", { lineHeight: "1.2", letterSpacing: "0.05em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }], "headline-sm": ["24px", { lineHeight: "1.3", fontWeight: "600" }], "label-sm": ["12px", { lineHeight: "1.2", fontWeight: "500" }], "headline-md": ["32px", { lineHeight: "1.2", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }], "display-lg-mobile": ["36px", { lineHeight: "1.2", fontWeight: "700" }] } } } };</script>
+    <link href="site.css" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .diagonal-bg {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .diagonal-bg-reverse {
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .diagonal-accent-right {
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md">
+    <!-- TopNavBar -->
+    <header class="fixed top-0 w-full z-50 bg-white border-b border-surface-container-high shadow-sm">
+        <div class="flex justify-between items-center h-20 px-margin-desktop w-full max-w-full">
+            <div class="flex items-center gap-8">
+                <a class="flex items-center" href="home.html">
+                    <img alt="MultiDynamic" class="h-10 object-contain"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA" />
+                </a>
+                <nav class="hidden lg:flex items-center gap-6">
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="buy.html">Buy</a>
+                    <a class="font-label-bold text-label-bold text-primary border-b-2 border-primary pb-1"
+                        href="rent.html">Rent</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="home.html#services">Sell</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="agents.html#agent-directory">Agents</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="office.html#office-list">Offices</a>
+                    <a class="font-label-bold text-label-bold text-secondary hover:text-primary transition-colors duration-200"
+                        href="about.html#about-story">About</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:block font-label-bold text-label-bold text-secondary px-4 py-2 hover:bg-surface-container-low rounded-lg transition-all"
+                    onclick="window.location.href='about.html#join-us'" type="button">Join Us</button>
+                <button
+                    class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-lg hover:brightness-110 transition-all"
+                    onclick="window.location.href='agent.html#book-appraisal'" type="button">Book Appraisal</button>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 overflow-hidden bg-white">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 transform translate-x-20 z-0"></div>
+        <div class="relative z-10 px-margin-desktop max-w-7xl mx-auto">
+            <div class="max-w-2xl mb-12">
+                <h1 class="font-display-lg text-display-lg text-secondary mb-4 italic">Built for <span
+                        class="text-primary">Confidence</span>.</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">Discover the strategy, scale, and people
+                    behind MultiDynamic's modern real estate approach.</p>
+            </div>
+            <div
+                class="bg-white card-ghost-shadow p-8 rounded-lg border border-surface-container-high grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span
+                        class="inline-block px-3 py-1 bg-primary/10 text-primary font-label-bold text-label-sm uppercase tracking-widest rounded">The
+                        Intersection of Insight &amp; Strategy</span>
+                    <h2 class="font-display-lg text-headline-md text-secondary">Your Dream Home Is <span
+                            class="text-primary italic">Our Mission</span></h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">MultiDynamic is dedicated to
+                        making your real estate dreams a reality through strategic excellence and unmatched local
+                        expertise.</p>
+                    <div class="flex gap-4">
+                        <div class="flex flex-col">
+                            <span class="font-display-lg text-headline-md text-primary">$4.2B+</span>
+                            <span class="font-label-bold text-label-sm text-on-surface-variant uppercase">Portfolio
+                                Managed</span>
+                        </div>
+                        <div class="w-px bg-outline-variant h-12 self-center"></div>
+                        <div class="flex flex-col">
+                            <span class="font-display-lg text-headline-md text-primary">120+</span>
+                            <span class="font-label-bold text-label-sm text-on-surface-variant uppercase">Specialist
+                                Agents</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <div
+                        class="absolute -top-4 -right-4 w-full h-full border-2 border-primary/20 rounded-xl transition-transform group-hover:translate-x-2 group-hover:translate-y-2">
+                    </div>
+                    <img alt="MultiDynamic Headquarters"
+                        class="rounded-xl shadow-2xl relative z-10 w-full h-[420px] object-cover"
+                        data-alt="A wide-angle interior photograph of a sleek, high-ceilinged corporate real estate office featuring minimalist glass partitions, polished concrete floors, and warm wooden accents. The lighting is bright and airy, with soft afternoon sunlight streaming through large windows. Professional staff are seen in blurred motion in the background, conveying a sense of dynamic energy and modern productivity. The palette consists of crisp whites, deep blues, and vibrant orange highlights."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlE-qwSUgNbMnk4yoZzVd3POfnZDutS1OpYdIfhdlnXjoLMmOEZ3wAVHyffNKCbppaVNw-cafsi4QvpGWUHjNtMZcOycBh034LqdHza7PFb7DAOEp0uBtKXZZL-GxnfXiN0ePADRzHLkwhLsVheBSIFOIAi5ZWR0shao_D5w1Ei1MH1iDquJqmZxmfF2f2yJnDF5ay9-MmwSAcuuGW5h4233RTXgfRvcuUvXOnOa4DJRXpdcVySWRsmpAUDRw_LELLEVZ5touxDBU">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Mission & Story -->
+    <section class="py-section-gap bg-surface-white transition-all duration-700 ease-out opacity-100 translate-y-0"
+        id="about-story">
+        <div class="px-margin-mobile md:px-margin-desktop grid md:grid-cols-12 gap-gutter">
+            <div class="md:col-span-5 space-y-8">
+                <h2 class="font-display-lg text-headline-md border-l-4 border-primary pl-6 border-[#f36421]">
+                    Professional and <br>Strategic Marketing.</h2>
+                <div class="space-y-4 font-body-md text-on-surface-variant leading-relaxed">
+                    <p class="">At MultiDynamic, we employ professional and strategic marketing techniques to ensure
+                        your property reaches the right audience. Our data-driven approach combines traditional
+                        excellence with modern digital strategies.</p>
+                    <p class="">We focus on delivering high-impact results that bridge the gap between expectations and
+                        reality, ensuring every client experiences the 'MultiDynamic' difference.</p>
+                </div>
+            </div>
+            <div class="md:col-span-1"></div>
+            <div class="md:col-span-6 grid grid-cols-2 gap-4">
+                <div class="pt-12">
+                    <img alt="Modern Architecture" class="rounded-lg shadow-lg w-full h-80 object-cover"
+                        data-alt="A low-angle shot of a striking modern skyscraper with sharp architectural angles and reflecting glass panels under a clear blue sky. The composition emphasizes technical precision and structural innovation. The lighting is crisp and high-contrast, echoing a premium corporate aesthetic. The overall mood is authoritative and forward-looking, perfectly aligned with a professional real estate brand."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD50KOnezSmrJpPVuCgxBZGatdjhmbsJ3dnXoN7zCrzgAnkCZuzIJXpjRXgspCL-nRZ-E014I2vANA83RTj1eIMcgB4SarrB3EIoY0UExCmeJaFhHafD_k3QxNGsdPt2cqA_uCByWOIXvzS1kXu4_M-P4K528kYDhP63W8BpDM2rXMRx_Fqc06MinnaSxMdPuv04Z5k-fTJzmVu0fxEKCBHaGySGBA127UkLFOCoKFw8CPvg5D0NgSWhr7Uu5yjtWZjW_Gn0UkrChQ">
+                </div>
+                <div class="pb-12">
+                    <img alt="Team Meeting" class="rounded-lg shadow-lg w-full h-80 object-cover"
+                        data-alt="A close-up shot of professional hands collaborating over a architectural floor plan on a clean white desk. A sleek tablet and a designer pen are also visible. The lighting is bright and focused, highlighting the precise details of the plan. The atmosphere is one of collaborative expertise and strategic planning, utilizing a palette of corporate blues and neutral grays with bright orange accents."
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmvMOKqnt5MXn7IzYFxHNzddsmWIWHRUTKwBA0yvkB6hLneMjmAUt7D_UOYj3_J44Rc8NcYhHMjnP7JCfYJJSUbUGDxOaK9foGCUKebBSq5a1oxh8Zj2aGJyOTpmzGl4V6AXaCstB04ZNAATXWLBsBrrVO3al6EImqORlSpAsSj9wU2GBkwNYZOCVv-QWqOPIdc9mhlfaFOM1xzX2nA5-TeIEIRJJSRFB_ScGcOCfIF11gfGSdFMpvoqWM8NiNRb0JcGi-HwTgiew">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Core Values Bento -->
+    <section
+        class="py-section-gap bg-surface-alt relative overflow-hidden transition-all duration-700 ease-out opacity-100 translate-y-0">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/5 rounded-full -mr-32 -mt-32"></div>
+        <div class="px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="font-display-lg text-headline-md">The Pillars of Our Success</h2>
+                <p class="max-w-2xl mx-auto text-on-surface-variant font-body-md">Our core values aren't just words on a
+                    wall—they are the DNA of every interaction we have and every deal we close.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><!-- Value 1 -->
+                <div
+                    class="bg-surface-white p-8 border border-surface-container-high rounded-xl hover:shadow-xl hover:scale-102 transition-all group">
+                    <div
+                        class="w-14 h-14 bg-secondary-container/20 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors bg-[#245eaa]/10 text-[#245eaa]">
+                        <span class="material-symbols-outlined text-3xl">campaign</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Strategic Marketing</h3>
+                    <p class="text-on-surface-variant font-body-md">Professional and strategic marketing ensures your
+                        property stands out in a competitive landscape.</p>
+                </div>
+                <!-- Value 2 -->
+                <div
+                    class="bg-surface-white p-8 border border-surface-container-high rounded-xl hover:shadow-xl hover:scale-102 transition-all group">
+                    <div
+                        class="w-14 h-14 bg-secondary-container/20 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors bg-[#245eaa]/10 text-[#245eaa]">
+                        <span class="material-symbols-outlined text-3xl">savings</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Save Money &amp; Time</h3>
+                    <p class="text-on-surface-variant font-body-md">Our efficient processes and deep market knowledge
+                        help you save both money and time during your real estate journey.</p>
+                </div>
+                <!-- Value 3 -->
+                <div
+                    class="bg-surface-white p-8 border border-surface-container-high rounded-xl hover:shadow-xl hover:scale-102 transition-all group">
+                    <div
+                        class="w-14 h-14 bg-secondary-container/20 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-container group-hover:text-white transition-colors bg-[#245eaa]/10 text-[#245eaa]">
+                        <span class="material-symbols-outlined text-3xl">verified_user</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Reliable &amp; Trustworthy</h3>
+                    <p class="text-on-surface-variant font-body-md">Built on a foundation of integrity, we provide
+                        reliable and trustworthy advice you can count on.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stats Banner -->
+    <section
+        class="py-20 bg-secondary text-white relative overflow-hidden transition-all duration-700 ease-out opacity-100 translate-y-0 bg-[#245eaa]">
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+            <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+                <path d="M0 100 L100 0 L100 100 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        <div class="px-margin-mobile md:px-margin-desktop grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div class="space-y-2">
+                <div class="font-display-lg text-display-lg-mobile md:text-display-lg">15k+</div>
+                <div class="font-label-bold text-label-sm uppercase tracking-widest text-secondary-fixed text-blue-100">
+                    Properties Sold</div>
+            </div>
+            <div class="space-y-2">
+                <div class="font-display-lg text-display-lg-mobile md:text-display-lg">24</div>
+                <div class="font-label-bold text-label-sm uppercase tracking-widest text-secondary-fixed text-blue-100">
+                    Global Offices</div>
+            </div>
+            <div class="space-y-2">
+                <div class="font-display-lg text-display-lg-mobile md:text-display-lg">98%</div>
+                <div class="font-label-bold text-label-sm uppercase tracking-widest text-secondary-fixed text-blue-100">
+                    Client Satisfaction</div>
+            </div>
+            <div class="space-y-2">
+                <div class="font-display-lg text-display-lg-mobile md:text-display-lg">$2B</div>
+                <div class="font-label-bold text-label-sm uppercase tracking-widest text-secondary-fixed text-blue-100">
+                    Annual Transactions</div>
+            </div>
+        </div>
+    </section>
+    <!-- Leadership Team -->
+    <section class="py-section-gap bg-surface-white transition-all duration-700 ease-out opacity-100 translate-y-0"
+        id="leadership">
+        <div class="px-margin-mobile md:px-margin-desktop">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div class="space-y-4">
+                    <h2 class="font-display-lg text-headline-md">Executive Leadership</h2>
+                    <p class="text-on-surface-variant max-w-xl font-body-md">Meet the visionaries steering MultiDynamic
+                        toward a more transparent and tech-enabled real estate future.</p>
+                </div>
+                <button
+                    class="font-label-bold text-label-bold text-primary flex items-center gap-2 group text-[#f36421]"
+                    onclick="window.location.href='agents.html#agent-directory'" type="button">
+                    View Entire Team <span
+                        class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8"><!-- Leader 1 -->
+                <div class="space-y-4 group">
+                    <div class="relative overflow-hidden rounded-xl aspect-[3/4]">
+                        <div class="absolute inset-0 bg-secondary/20 group-hover:bg-secondary/0 transition-colors z-10">
+                        </div>
+                        <img alt="Megha Raj Poudel"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuARDaEzqWZicrOsb52tKEY2-aVKd3TctE9ossX5nBSMMlxxe1A0SWrW3Binl6At0vguWlkHj74M9yd4X944Uu5PL_y6j5SwP3PyULMCXPMzF7GjswXnHBrT1QPCgbYN_x2kpQOES6KPRRXoaskYrt3KOWWFekN5JaLfqLbAZ9PmRH1uMnBCGEOAJQ_yco7eJyiSA53N0BbSQ4Bk8H0r9fBziNaS4f-_k63-SOAYAyVXNS2YDz3mFA1-cLrA6Iv7nj_opoKo45dKZ1E">
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent z-20">
+                            <p class="text-white font-label-bold text-label-sm uppercase">CEO</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-sm text-headline-sm">Megha Raj Poudel</h4>
+                        <p class="text-on-surface-variant font-body-md">Chief Executive Officer</p>
+                    </div>
+                </div>
+                <!-- Leader 2 -->
+                <div class="space-y-4 group">
+                    <div class="relative overflow-hidden rounded-xl aspect-[3/4]">
+                        <div class="absolute inset-0 bg-secondary/20 group-hover:bg-secondary/0 transition-colors z-10">
+                        </div>
+                        <img alt="Bishnu Prabhat Sapkota"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ckowIiXZjZXZZAcItDEycmSTvKvDmD8BivTvkY2Qw_08rBsGaBpoSqTc_gWKVb3OaF7WX_pH0Snl3qsJXtw7TFUo_iP1k4hCm3thh_BgPVc2u7NkafPMyWGauKdZ1kRDqDbpzZRcvShcGQZPZZpE4Hp_ciLG9xPAnxFxpwhoCibXdMq_uVeilwbzpE5AHWwg2ELnLMKKmvq9qAG75FQK2XNEHRsnymslGckgnHhe5aMQ4S1kRKM69m__8_JN3ChORvuIkoTmpyI">
+                        <div
+                            class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/80 to-transparent z-20">
+                            <p class="text-white font-label-bold text-label-sm uppercase">BOD</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-headline-sm text-headline-sm">Bishnu Prabhat Sapkota</h4>
+                        <p class="text-on-surface-variant font-body-md">Board of Directors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Join Us CTA -->
+    <section
+        class="relative py-section-gap bg-on-secondary-fixed-variant text-white overflow-hidden transition-all duration-700 ease-out opacity-100 translate-y-0 bg-[#245eaa]"
+        id="join-us">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-primary-container diagonal-accent-right -z-0 opacity-10">
+        </div>
+        <div class="px-margin-mobile md:px-margin-desktop relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg">Built for the <br><span
+                        class="text-primary-container italic text-[#f36421]">Ambitious.</span></h2>
+                <p class="text-secondary-fixed text-body-lg max-w-lg">Are you a specialist who thrives in a
+                    high-performance environment? We are always looking for agents, technologists, and strategists to
+                    join our growing national network.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button
+                        class="bg-primary-container text-white font-label-bold text-label-bold px-8 py-4 rounded-lg hover:scale-105 transition-transform bg-[#f36421]"
+                        onclick="window.location.href='about.html#join-us'" type="button">Explore Careers</button>
+                    <button
+                        class="border border-white/30 text-white font-label-bold text-label-bold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors"
+                        onclick="window.location.href='office.html#join-us'" type="button">Partner With Us</button>
+                </div>
+            </div>
+            <div class="bg-white/5 backdrop-blur-md p-10 rounded-2xl border border-white/10">
+                <h3 class="font-headline-sm text-headline-sm mb-6">Inquire Privately</h3>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input
+                            class="bg-white/10 border-white/20 rounded-lg text-white placeholder:text-white/40 focus:ring-primary-container"
+                            placeholder="First Name" type="text">
+                        <input
+                            class="bg-white/10 border-white/20 rounded-lg text-white placeholder:text-white/40 focus:ring-primary-container"
+                            placeholder="Last Name" type="text">
+                    </div>
+                    <input
+                        class="w-full bg-white/10 border-white/20 rounded-lg text-white placeholder:text-white/40 focus:ring-primary-container"
+                        placeholder="Professional Email" type="email">
+                    <select
+                        class="w-full bg-white/10 border-white/20 rounded-lg text-white/60 focus:ring-primary-container">
+                        <option>Interested in joining as Agent</option>
+                        <option>Interested in Corporate roles</option>
+                        <option>Interested in Franchise opportunities</option>
+                    </select>
+                    <button
+                        class="w-full bg-white text-secondary font-label-bold text-label-bold py-4 rounded-lg hover:bg-primary-container hover:text-white transition-all">Submit
+                        Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Corporate Contacts -->
+    <section class="py-section-gap bg-surface-container transition-all duration-700 ease-out opacity-100 translate-y-0"
+        id="contact">
+        <div class="px-margin-mobile md:px-margin-desktop grid md:grid-cols-3 gap-gutter">
+            <div class="space-y-6">
+                <a class="block mb-6" href="home.html">
+                    <img alt="MultiDynamic Logo" class="h-12 w-auto object-contain"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA">
+                </a>
+                <p class="text-on-surface-variant font-body-md">Global Head Office<br>Level 42, International Tower
+                    One<br>Sydney, NSW 2000, Australia</p>
+                <div class="space-y-2">
+                    <a class="flex items-center gap-3 text-secondary hover:text-primary transition-colors text-[#245eaa]"
+                        href="tel:+61280000000">
+                        <span class="material-symbols-outlined">call</span>
+                        <span class="font-label-bold text-label-bold">+61 (2) 8000 0000</span>
+                    </a>
+                    <a class="flex items-center gap-3 text-secondary hover:text-primary transition-colors text-[#245eaa]"
+                        href="mailto:corporate@multidynamic.com">
+                        <span class="material-symbols-outlined">mail</span>
+                        <span class="font-label-bold text-label-bold">corporate@multidynamic.com</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:col-span-2 rounded-2xl overflow-hidden shadow-inner min-h-[300px]">
+                <img alt="Office Map Location" class="w-full h-full object-cover"
+                    data-alt="An abstract, stylized digital map of a modern city center, rendered in a corporate blue and silver palette with glowing orange markers indicating office locations. The map is clean and professional, focusing on major boulevards and landmarks without clutter. The lighting is sleek and futuristic, suggesting advanced navigation and strategic coverage."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtYaOEO-TfRFWdEpd7nM-YvAOTM57y5Hifa0ikeAuAlFiGog1_t7K4YSwoohDobR1cwczo3k_KNsPUszStiEs28sW6Q91-9F5jbJWcbg3JRAi31w62B9a3Rxy7N4Om0z6UCVMEkurePGqqYaJ0nJWxvPpHvNrA6zp25GdYp1YUjpP9ZiqlPYOu8TT1R1kr16iOC4EtfZ4rFYBEvD84X60cZluenar4I_Y23aMUlRUwHy6Cx925MLcyQTo8QFG9V3Mlt67Dq7sTzBw">
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer
+        class="w-full relative overflow-hidden bg-secondary dark:bg-on-secondary-fixed-variant text-on-secondary dark:text-secondary-fixed py-section-gap px-margin-mobile md:px-margin-desktop before:content-[''] before:absolute before:inset-0 before:bg-primary-container before:h-2 before:w-full before:top-0 before:origin-left before:-skew-y-2 bg-[#245eaa]">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter relative z-10">
+            <div class="space-y-6">
+                <a class="block mb-6" href="home.html">
+                    <img alt="MultiDynamic Logo" class="h-12 w-auto object-contain"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiEoLVeUrbrnqBcjOoMBknWKkpN5U2cMpQIzFnA94wM4F4PqemFvYTgbmnK_-9tooHSx_v4GJigGNTx2QixWJagtYdlK1Tig1jhfNGxiGJsQMt3rV0uktHB_o4AGJ8CvSGJTZSprL9vr0I_dlBz-sPp_9f89WLdGPElYdv3Aa-JB5bUW2Wd9PV8f4CLpWVtzoASengccOCt4rUTwwGVwICqrPzdmNILIoKVPSwuNdeAqCvj0Ieu2fBY8IA">
+                </a>
+                <p class="font-body-md text-body-md text-on-secondary/80">Redefining the real estate experience through
+                    technical precision and local insight.</p>
+            </div>
+            <div class="space-y-4">
+                <h5 class="font-label-bold text-label-bold uppercase text-primary-container text-[#f36421]">Quick Links
+                </h5>
+                <ul class="space-y-2 font-body-md text-body-md text-on-secondary/80">
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="agents.html#agent-directory">Find an Agent</a></li>
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="office.html#office-list">Find an Office</a></li>
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="about.html#about-story">About Us</a></li>
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="home.html#insights">Newsletter Signup</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h5 class="font-label-bold text-label-bold uppercase text-primary-container text-[#f36421]">Legal</h5>
+                <ul class="space-y-2 font-body-md text-body-md text-on-secondary/80">
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="about.html#contact">Privacy Policy</a></li>
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="about.html#contact">Terms of Service</a></li>
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="about.html#contact">Cookie Policy</a></li>
+                    <li class=""><a class="hover:text-primary-container transition-colors"
+                            href="about.html#contact">Compliance</a></li>
+                </ul>
+            </div>
+            <div class="space-y-6">
+                <h5 class="font-label-bold text-label-bold uppercase text-primary-container text-[#f36421]">Stay
+                    Informed</h5>
+                <div class="flex gap-2">
+                    <input class="bg-white/10 border-white/20 rounded text-sm text-white w-full"
+                        placeholder="Email Address" type="text">
+                    <button
+                        class="bg-primary-container p-2 rounded text-white flex items-center justify-center bg-[#f36421]"
+                        onclick="window.location.href='home.html#insights'" type="button">
+                        <span class="material-symbols-outlined">send</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 pt-8 border-t border-white/10 text-center font-body-md text-body-md text-on-secondary/60">
+            © 2024 MultiDynamic Real Estate. All rights reserved.
+        </div>
+    </footer>
+    <script src="site.js"></script>
+
+
+
+
+</body>
+
+</html>

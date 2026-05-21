@@ -1,0 +1,30 @@
+:root {
+    --reveal-distance: 48px;
+    --reveal-duration: 760ms;
+}
+
+.card-ghost-shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.reveal-section {
+    opacity: 0;
+    transform: translateY(var(--reveal-distance)) scale(0.985);
+    transition:
+        opacity var(--reveal-duration) cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+        transform var(--reveal-duration) cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+.reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-section {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}
